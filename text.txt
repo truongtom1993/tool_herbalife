@@ -1,0 +1,66 @@
+Phần tử chứa slide:
+#slide
+#slide > main
+#slide-window
+#slide-window > div
+#slide-window > div > div > div.slide-transition-container
+
+
+- Chữ Trao đổi, hỏi đáp: #slide-window > div > div > div.slide-transition-container > div > div > div > div:nth-child(8)
+- sidebar: #slide-window > div > div > div.slide-transition-container > div > div > div > div.slide-layer.base-layer.shown > span > div:nth-child(2)
+
+- Sidebar là 1 cái ảnh, ko hiểu sao click vào lại được: #uniqueDomId-1005
+
+//*[@id="slide-window"]/div/div/div[1]/div/div/div/div[4]/span/div[2]/div
+
+window.PauseTimeTracking()
+ResetStatus()
+SCORM2004_SetCompleted()
+SCORM2004_SetPassed()
+SCORM_GetScore()
+
+window.GetStudentName() => hoat dong
+Cac function SCORM hoat dong
+SCORM_GetStatus()
+SCORM_GetStudentID()
+SCORM_GetStudentName()
+
+SCORM_GrabAPI()
+SCORM_Initialize()
+SCORM_ResetStatus()
+ShowDebugWindow() => Hoat dong, dung de xem log he thong
+Start()
+
+TCAPI_GetScore()
+TCAPI_GetStatus
+TCAPI_GetStudentID
+TCAPI_GetStudentName
+aryDebug -> quan trọng
+
+clientInformation
+isMobile
+this.getCurrentWindowSlide()
+r.setSlideLoading(a)
+
+File bootstrapper.min.js sẽ gọi api tải về file js chứa content, sau đó file slides.min.js sẽ load các content ảnh lên thành slide
+Nội dung tải về được cất trong /html5/data/css/js
+
+nghi ngờ executeAction và executeActions() trong slides.min.js
+nghi ngờ hàm changeSlide: function(e, n) {
+                        var i = this;
+                        if (!A()) {
+                            var r = S.getPath(n, "actionTarget.absoluteId");
+                            if (null == r && t.isPreview())
+                                m.trigger(f.preview.NOTIFY, "PREVIEW_SLIDE_MISSING");
+                            else {
+                                if (this.isLightBox(e.window))
+                                    if (T.isWaitingLoad(!1, (function() {
+                                        i.changeSlide(e, n)
+                                    }
+                                    )))
+                                        return;
+                                m.trigger(f.request.NEXT_SLIDE, r, e.window)
+                            }
+                        }
+                    },
+nghi ngờ triggerEvent trong slide.min

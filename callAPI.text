@@ -1,0 +1,54 @@
+Đây chính là nơi gọi api get nội dung.
+trong hàm này, n là XMLHttpRequest, còn s = voi 0, this là h.
+Có vẻ nó sẽ chạy tiếp preloadNextSlideData và preloadNextSlide
+							 
+							 
+							  h.prototype.end = function(t) {
+                    var e = this
+                      , n = this.xhr = d.getXHR()
+                      , i = this._query.join("&")
+                      , a = this._timeout
+                      , s = this._formData || this._data;
+                    this._callback = t || r,
+                    n.onreadystatechange = function() {
+                        if (4 == n.readyState) {
+                            try {
+                                n.status
+                            } catch (t) {
+                                if (e.timedout)
+                                    return e.timeoutError();
+                                if (e.aborted)
+                                    return;
+                                return e.crossDomainError()
+                            }
+                            e.emit("end")
+                        }
+                    }
+                    ;
+                    var l = function(t) {
+                        t.total > 0 && (t.percent = t.loaded / t.total * 100),
+                        e.emit("progress", t)
+                    };
+                    this.hasListeners("progress") && (n.onprogress = l);
+                    try {
+                        n.upload && this.hasListeners("progress") && (n.upload.onprogress = l)
+                    } catch (t) {}
+                    if (a && !this._timer && (this._timer = setTimeout((function() {
+                        e.timedout = !0,
+                        e.abort()
+                    }
+                    ), a)),
+                    i && (i = d.serializeObject(i),
+                    this.url += ~this.url.indexOf("?") ? "&" + i : "?" + i),
+                    n.open(this.method, this.url, !0),
+                    this._withCredentials && (n.withCredentials = !0),
+                    "GET" != this.method && "HEAD" != this.method && "string" != typeof s && !o(s)) {
+                        var u = d.serialize[this.getHeader("Content-Type")];
+                        u && (s = u(s))
+                    }
+                    for (var c in this.header)
+                        null != this.header[c] && n.setRequestHeader(c, this.header[c]);
+                    return this.emit("request", this),
+                    n.send(s),
+                    this
+                }

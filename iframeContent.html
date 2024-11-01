@@ -1,0 +1,1391 @@
+<div id="preso" class="hide-slide-loader" style="/* display: none; */">
+	<div id="lib" class="offscreen">
+		<div><svg width="0" height="0" style="position:absolute;" focusable="false">
+				<defs>
+					<filter id="text-shadow" x="0%" y="0%" width="113%" height="113%">
+						<feGaussianBlur stdDeviation="1 1" result="text-shadow"></feGaussianBlur>
+						<feOffset dx="1.5" dy="1.5"></feOffset>
+					</filter>
+					<linearGradient id="timer-blue-grad" class="cs-duration">
+						<stop offset="0%" "=""></stop>
+			<stop offset=" 100%"></stop>
+					</linearGradient>
+					<linearGradient id="timer-yellow-grad" class="cs-elapsed">
+						<stop offset="0%"></stop>
+						<stop offset="100%"></stop>
+					</linearGradient>
+					<linearGradient id="drop-list-gradient" gradientTransform="rotate(90)">
+						<stop offset="0%"></stop>
+						<stop offset="100%"></stop>
+					</linearGradient>
+					<linearGradient id="dragdrop-gradient" gradientTransform="rotate(90)">
+						<stop offset="0%"></stop>
+						<stop offset="100%"></stop>
+					</linearGradient>
+					<linearGradient id="dragdrop-hover-gradient" gradientTransform="rotate(90)">
+						<stop offset="0%"></stop>
+						<stop offset="100%"></stop>
+					</linearGradient>
+					<linearGradient id="wordbank-droparea-stroke-gradient" gradientTransform="rotate(90)">
+						<stop offset="0%"></stop>
+						<stop offset="100%"></stop>
+					</linearGradient>
+					<filter id="dragdrop-inner-stroke">
+						<feFlood flood-color="#fff" result="strokeColor"></feFlood>
+						<feMorphology operator="erode" radius="2" in="SourceAlpha" result="innerMorph"></feMorphology>
+						<feMorphology operator="erode" radius="1" in="SourceAlpha" result="outerMorph"></feMorphology>
+						<feComposite in="innerMorph" in2="outerMorph" operator="xor" result="morph"></feComposite>
+						<feComposite in="strokeColor" in2="morph" operator="in" result="innerStroke"></feComposite>
+						<feComposite in="innerStroke" in2="SourceGraphic" operator="over"></feComposite>
+					</filter>
+				</defs>
+			</svg></div>
+		<div>
+			<svg width="0" height="0" style="position:absolute;" focusable="false">
+				<defs></defs>
+			</svg>
+		</div>
+		<div id="video-pen" class="offscreen" aria-hidden="true"></div>
+		<div><canvas role="presentation" width="1000" height="650"></canvas></div>
+		<div id="presentation-canvas"></div>
+		<div id="zoomimage-container"></div>
+		<div id="mask-library"></div>
+	</div>
+	<div id="media-loader-container" class="media-loader-container"><svg width="1" focusable="false" height="1">
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5eYUsD6wJo5.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5rEPNgqL2Q4.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6fQ5KFA0wQL.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6ZRDPW5SODk.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5ztEVDO3EDJ_P_0_454_61_136.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6YgP6jHNTs6.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6RFYHSrXf2r_80.jpg">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6S5yAAqO6el.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5w0Va9mUFOS.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/60CUhX2myHf.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5zGbZfgpuQk.png">
+			</image>
+			<image
+				xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6dA5KRyID9d.png">
+			</image>
+		</svg></div>
+	<div id="wrapper" class="cs-base cs-npnxnanbnsnfns00000000001 fn-npnxnanbnsnfns00000000001 cs-custom-theme"
+		style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; font-size: 100%; width: 1016px; height: 811px; transform: translate(0px, 0px);">
+		<div id="frame" class="cs-base cs-npnxnanbnsnfns00000000001 fn-npnxnanbnsnfns00000000001"
+			style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; width: 1016px; height: 811px; transform: translate(0px, 0px);">
+			<div class="top-ui-bg"></div>
+			<div class="bottom-ui-bg"></div>
+			<div class="left-ui-bg"></div>
+			<div class="right-ui-bg"></div>
+			<div id="frame-blocker" class="frame-blocker-container"
+				style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 1000; pointer-events: none; visibility: hidden; width: 1016px; height: 811px; transform: translate(0px, 0px); grid-template-columns: 0px 1016px 0px; grid-template-rows: 75px 660px 76px;">
+				<div class="frame-blocker-slide"></div>
+				<div class="frame-blocker-top"></div>
+				<div class="frame-blocker-bottom"></div>
+				<div class="frame-blocker-right"></div>
+				<div class="frame-blocker-left"></div>
+			</div><button class="sidebar-overlay btn" aria-label="Đóng" tabindex="-1"
+				style="left: 0px; top: 0px; overflow: hidden; transform-origin: center center; cursor: pointer; width: 1016px; height: 811px; transform: translate(0px, 0px);"
+				data-tabindex="-1"></button>
+			<div id="slide" class="window-slide _frame-slide primary-slide"
+				style="position: absolute; left: 0px; top: 0px; overflow: scroll; transform-origin: 0px 0px; z-index: 1; width: 1016px; height: 660px; transform: translate(0px, 75px);">
+				<div id="slide-label" data-ref="label" aria-live="polite">slide: nd</div>
+				<main class="slide-container" data-ref="container" aria-live="off" tabindex="-1" data-tabindex="-1">
+					<div id="slide-window" data-reactid=".0">
+						<div class="slide-window-slide-container cs-slide-container" data-reactid=".0.0">
+							<div style="overflow: visible; transform: translate(0px, 0px); width: 1016px; height: 660.4px;"
+								class="slide-container" data-reactid=".0.0.1">
+								<div class="slide-transition-container" style="width: 1016px; height: 660.4px; overflow: hidden;"
+									data-reactid=".0.0.1.1:$_player=15rye6oJ5hQh=16AedbN0XtCL">
+									<div class="dropin-wrap" style="height: 100%; position: absolute; z-index: 0;"
+										data-reactid=".0.0.1.1:$_player=15rye6oJ5hQh=16AedbN0XtCL.0">
+										<div class="slide cs-6AedbN0XtCL" role="presentation" data-rollout-highest-node="true"
+											data-id="6AedbN0XtCL" data-has-capture="" data-display-name="Slide" data-dv_comp="30"
+											style="z-index: 0; width: 1016px; height: 660.4px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+											<div data-dv_ref="zoomPanTarget"><svg width="1016" height="660.4" viewBox="0 0 1000 650"
+													focusable="false" data-display-name="SlideBackground" data-dv_comp="33">
+													<defs>
+														<linearGradient id="pattern-fill-6AedbN0XtCL" gradientTransform="rotate(90 0.5 0.5)"
+															data-display-name="LinearBackgroundGradient" data-dv_comp="32">
+															<stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+														</linearGradient>
+													</defs>
+													<rect id="slide-bg-6AedbN0XtCL" width="1000" height="650"
+														fill="url(#pattern-fill-6AedbN0XtCL)"></rect>
+												</svg>
+												<div class="zoom-bg-container"></div>
+												<div class="r-wrap" data-display-name="ReactWrapper" data-dv_comp="35" data-ref="accShadowDom">
+													<div class="acc-shadow-dom"
+														style="width: 1000px; height: 650px; transform: scale(1.016); transform-origin: 0px 0px;"
+														data-reactid=".2"><button class="acc-shadow-el acc-button" id="acc-6d0MJo7PWFR" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.6d0MJo7PWFR"
+															style="left: -2.5px; top: -1.5px; width: 60.4931px; height: 65px; visibility: visible; z-index: 21;"
+															type="button" aria-label="Rectangle 7" data-reactid=".2.0:$21">Rectangle 7</button><button
+															class="acc-shadow-el acc-button" id="acc-6RTXY8a3Sfa" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.6RTXY8a3Sfa"
+															style="left: -0.5px; top: 70.5px; width: 60.4931px; height: 65px; visibility: visible; z-index: 20;"
+															type="button" aria-label="Rectangle 1" data-reactid=".2.0:$20">Rectangle 1</button><button
+															class="acc-shadow-el acc-button" id="acc-6DBRoDcp2iW" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.6DBRoDcp2iW"
+															style="left: -1.5px; top: 260.5px; width: 60.4931px; height: 65px; visibility: visible; z-index: 22;"
+															type="button" aria-label="Rectangle 4" data-reactid=".2.0:$22">Rectangle 4</button>
+														<div data-reactid=".2.0:$26">
+															<p class="acc-shadow-el acc-text" id="acc-5jr6Wamfp78" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.5jr6Wamfp78"
+																data-reactid=".2.0:$26.0">Line 1</p>
+														</div><button class="acc-shadow-el acc-button" id="acc-6KM1cSj5mWK" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.6KM1cSj5mWK"
+															style="left: 8.5px; top: 328.5px; width: 43px; height: 25px; visibility: visible; z-index: 25;"
+															type="button" aria-label="thoat.png" data-reactid=".2.0:$25">thoat.png</button><button
+															class="acc-shadow-el acc-button" id="acc-5ygxHDktpP3" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.5ygxHDktpP3"
+															style="left: -1.5px; top: 519.5px; width: 60.4931px; height: 43px; visibility: visible; z-index: 23;"
+															type="button" aria-label="Rectangle 5" data-reactid=".2.0:$23">Rectangle 5</button><button
+															class="acc-shadow-el acc-button" id="acc-5hPASxDlUvO" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.5hPASxDlUvO"
+															style="left: 3.5px; top: 573.5px; width: 50.7466px; height: 65px; visibility: visible; z-index: 19;"
+															type="button" aria-label="Rectangle 6" data-reactid=".2.0:$19">Rectangle 6</button><button
+															class="acc-shadow-el acc-button" id="acc-5WRfzXmXItB" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hMKuQMfkMY.5WRfzXmXItB"
+															style="left: 771.5px; top: 615.5px; width: 204px; height: 36px; visibility: visible; z-index: 24;"
+															type="button" aria-label="chatBtn.png" data-reactid=".2.0:$24">chatBtn.png</button>
+														<div data-reactid=".2.0:$1"><img class="acc-shadow-el acc-image" aria-label="Picture 2.png"
+																id="acc-5hHV0go0spb" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5hHV0go0spb"
+																style="left: -0.5px; top: -0.5px; width: 60px; height: 651px; visibility: visible; z-index: 1;"
+																data-reactid=".2.0:$1.1"></div>
+														<div data-reactid=".2.0:$0"><img class="acc-shadow-el acc-image" aria-label="Picture 1.png"
+																id="acc-5oJIkEPWqhY" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5oJIkEPWqhY"
+																style="left: 58.5px; top: 0.5px; width: 941px; height: 61px; visibility: visible; z-index: 0;"
+																data-reactid=".2.0:$0.1"></div>
+														<div data-reactid=".2.0:$2">
+															<div class="acc-shadow-el acc-text" id="acc-5Z7W9egJ2Mt" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5Z7W9egJ2Mt"
+																style="left: 381.5px; top: 7.5px; width: 599px; height: 43px; visibility: visible; z-index: 2; display: flex;"
+																data-reactid=".2.0:$2.1">
+																<div
+																	style="display:inline-flex;flex-direction:column;transform-origin:0 0;width:580px;height:24px;min-width:580px;min-height:24px;transform:translate(9px, 9px);justify-content:flex-start;"
+																	data-reactid=".2.0:$2.1.0">
+																	<p style="text-align:right;text-indent:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																		data-reactid=".2.0:$2.1.0.$0"><span
+																			style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#5FBB46;font-size:15.624pt;font-style:normal;letter-spacing:0pt;line-height:23.274px;text-decoration:;"
+																			data-reactid=".2.0:$2.1.0.$0.$0">CƠ CHẾ ĐÁNH GIÁ</span></p>
+																</div>
+																<div tabindex="-1" aria-role="scrollbar" aria-valuemin="0" aria-valuemax="100"
+																	aria-valuenow="0" aria-hidden="true"
+																	style="width: 15.748px; height: 24px; transform-origin: -580px 0px; transform: translate(9px, 9px); position: absolute; right: 16px;"
+																	data-reactid=".2.0:$2.1.1"></div>
+															</div>
+														</div>
+														<div data-reactid=".2.0:$3">
+															<div class="acc-shadow-el acc-text" id="acc-5ZNOK46FpG4" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5ZNOK46FpG4"
+																style="left: 64.5px; top: 84.5px; width: 471.292px; height: 94.2173px; visibility: visible; z-index: 3; display: flex;"
+																data-reactid=".2.0:$3.1">
+																<div
+																	style="display:inline-flex;flex-direction:column;transform-origin:0 0;width:452px;height:75px;min-width:452px;min-height:75px;transform:translate(9px, 9px);justify-content:flex-start;"
+																	data-reactid=".2.0:$3.1.0">
+																	<p style="text-align:justify;text-indent:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																		data-reactid=".2.0:$3.1.0.$0"><span
+																			style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#60BB45;font-size:22.491pt;font-style:normal;letter-spacing:0pt;line-height:33.501999999999995px;text-decoration:;"
+																			data-reactid=".2.0:$3.1.0.$0.$0">Chương trình đào tạo cơ bản </span><br
+																			data-reactid=".2.0:$3.1.0.$0.$1"><span
+																			style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#60BB45;font-size:22.491pt;font-style:normal;letter-spacing:0pt;line-height:33.501999999999995px;text-decoration:;"
+																			data-reactid=".2.0:$3.1.0.$0.$2">bao gồm tổng cộng 5 học phần </span></p>
+																</div>
+																<div tabindex="-1" aria-role="scrollbar" aria-valuemin="0" aria-valuemax="100"
+																	aria-valuenow="0" aria-hidden="true"
+																	style="width: 15.748px; height: 75px; transform-origin: -452px 0px; transform: translate(9px, 9px); position: absolute; right: 16px;"
+																	data-reactid=".2.0:$3.1.1"></div>
+															</div>
+														</div>
+														<div data-reactid=".2.0:$5"><img class="acc-shadow-el acc-image" aria-label="Picture 1.png"
+																id="acc-5vDbRDjnUMH" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5vDbRDjnUMH"
+																style="left: 589.5px; top: 98.5px; width: 411px; height: 552px; visibility: visible; z-index: 5;"
+																data-reactid=".2.0:$5.1"></div>
+														<div data-reactid=".2.0:$18">
+															<p class="acc-shadow-el acc-text" id="acc-6W98ciSHZu0" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0" data-reactid=".2.0:$18.0">
+																Group 1</p>
+														</div><button class="acc-shadow-el acc-button" id="acc-5dPtusorMIy" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.5dPtusorMIy"
+															style="left: -0.5px; top: 138.5px; width: 60px; height: 51px; visibility: visible; z-index: 18;"
+															type="button" aria-label="Rectangle 1" data-reactid=".2.0:$17">Rectangle 1</button><button
+															class="acc-shadow-el acc-button" id="acc-6hsu1sn1Lmc" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6hsu1sn1Lmc"
+															style="left: -0.5px; top: 201.5px; width: 60px; height: 53px; visibility: visible; z-index: 8;"
+															type="button" aria-label="Rectangle 1" data-reactid=".2.0:$7">Rectangle 1</button><button
+															class="acc-shadow-el acc-button" id="acc-6od7VkpHhwy" tabindex="0" aria-hidden="true"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6od7VkpHhwy.6od7VkpHhwy"
+															style="left: -0.5px; top: 201.5px; width: 60px; height: 53px; visibility: hidden; z-index: 10;"
+															type="button" aria-label="Rectangle 2" data-reactid=".2.0:$8">Rectangle 2</button>
+														<div data-reactid=".2.0:$10"><img class="acc-shadow-el acc-image" aria-label="pause.png"
+																id="acc-66hUojDAoqj" tabindex="-1" aria-hidden="true"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6od7VkpHhwy.66hUojDAoqj"
+																style="left: 11.5px; top: 209.5px; width: 46px; height: 43px; visibility: hidden; z-index: 12;"
+																data-reactid=".2.0:$10.1"></div>
+														<div data-reactid=".2.0:$9">
+															<p class="acc-shadow-el acc-text" id="acc-6lCD3ohXAdH" tabindex="-1" aria-hidden="true"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6od7VkpHhwy.6lCD3ohXAdH"
+																data-reactid=".2.0:$9.0">Rectangle 1</p>
+														</div><button class="acc-shadow-el acc-button" id="acc-6UhtSDjV7OL" tabindex="0"
+															data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6UhtSDjV7OL.6UhtSDjV7OL"
+															style="left: -2px; top: 562px; width: 61px; height: 88px; visibility: hidden; z-index: 14;"
+															type="button" aria-label="Asset 13n.png" data-reactid=".2.0:$12" aria-hidden="true">Asset
+															13n.png</button>
+														<div data-reactid=".2.0:$14">
+															<p class="acc-shadow-el acc-text" id="acc-6TE5pxOCJj5" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6UhtSDjV7OL.6TE5pxOCJj5"
+																data-reactid=".2.0:$14.0" aria-hidden="true">Rectangle 1</p>
+														</div>
+														<div data-reactid=".2.0:$13"><img class="acc-shadow-el acc-image" aria-label="Asset 8n.png"
+																id="acc-5s6MOC34HxS" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6UhtSDjV7OL.5s6MOC34HxS"
+																style="left: 13.5px; top: 574.5px; width: 37px; height: 62px; visibility: hidden; z-index: 15;"
+																data-reactid=".2.0:$13.1" aria-hidden="true"></div>
+														<div data-reactid=".2.0:$15"><img class="acc-shadow-el acc-image" aria-label="Asset 8n.png"
+																id="acc-6owtRCsAcrM" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6W98ciSHZu0.6UhtSDjV7OL.6owtRCsAcrM"
+																style="left: 13.5px; top: 575.5px; width: 37px; height: 62px; visibility: hidden; z-index: 17;"
+																data-reactid=".2.0:$15.1" aria-hidden="true"></div>
+														<div data-reactid=".2.0:$6">
+															<p class="acc-shadow-el acc-text" id="acc-6GsEFDvFFEg" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.6GsEFDvFFEg" data-reactid=".2.0:$6.0">
+																Google Shape;80;p15</p>
+														</div>
+														<div data-reactid=".2.0:$4">
+															<div class="acc-shadow-el acc-text" id="acc-5Y9ZZTQXppW" tabindex="-1"
+																data-represents="_player.5rye6oJ5hQh.6AedbN0XtCL.5Y9ZZTQXppW"
+																style="left: 55.5px; top: 212.5px; width: 502px; height: 293px; visibility: visible; z-index: 4; display: flex;"
+																data-reactid=".2.0:$4.1">
+																<div
+																	style="display:inline-flex;flex-direction:column;transform-origin:0 0;width:483px;height:274px;min-width:483px;min-height:274px;transform:translate(9px, 9px);justify-content:flex-start;"
+																	data-reactid=".2.0:$4.1.0">
+																	<ul class="semantic-list" data-reactid=".2.0:$4.1.0.$0">
+																		<li
+																			style="text-align:justify;text-indent:-35.986px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:49.980666666666664px;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																			data-reactid=".2.0:$4.1.0.$0.$0"><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;,&quot;Arial&quot;;font-size:16.666pt;color:#60BB45;min-width:35.986px;display:inline-block;text-indent:0;text-align:justify;"
+																				data-reactid=".2.0:$4.1.0.$0.$0.$bullet">•</span><span
+																				style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$0.$0">Học phần 1:</span><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$0.$1"> Pháp luật về bán hàng đa cấp</span></li>
+																		<li
+																			style="text-align:justify;text-indent:-35.986px;padding-top:10.413px;padding-bottom:0;padding-right:0;padding-left:49.980666666666664px;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																			data-reactid=".2.0:$4.1.0.$0.$1"><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;,&quot;Arial&quot;;font-size:16.666pt;color:#60BB45;min-width:35.986px;display:inline-block;text-indent:0;text-align:justify;"
+																				data-reactid=".2.0:$4.1.0.$0.$1.$bullet">•</span><span
+																				style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$1.$0">Học phần 2:</span><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$1.$1"> Các chuẩn mực đạo đức trong hoạt động bán
+																				hàng đa cấp</span></li>
+																		<li
+																			style="text-align:justify;text-indent:-35.986px;padding-top:10.413px;padding-bottom:0;padding-right:0;padding-left:49.980666666666664px;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																			data-reactid=".2.0:$4.1.0.$0.$2"><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;,&quot;Arial&quot;;font-size:16.666pt;color:#60BB45;min-width:35.986px;display:inline-block;text-indent:0;text-align:justify;"
+																				data-reactid=".2.0:$4.1.0.$0.$2.$bullet">•</span><span
+																				style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$2.$0">Học phần 3:</span><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$2.$1"> Các nội dung cơ bản của Hợp đồng tham gia
+																				bán hàng đa cấp</span></li>
+																		<li
+																			style="text-align:justify;text-indent:-35.986px;padding-top:10.413px;padding-bottom:0;padding-right:0;padding-left:49.980666666666664px;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																			data-reactid=".2.0:$4.1.0.$0.$3"><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;,&quot;Arial&quot;;font-size:16.666pt;color:#60BB45;min-width:35.986px;display:inline-block;text-indent:0;text-align:justify;"
+																				data-reactid=".2.0:$4.1.0.$0.$3.$bullet">•</span><span
+																				style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$3.$0">Học phần 4:</span><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$3.$1"> Các nội dung cơ bản trong Quy tắc hoạt
+																				động</span></li>
+																		<li
+																			style="text-align:justify;text-indent:-35.986px;padding-top:10.413px;padding-bottom:0;padding-right:0;padding-left:49.980666666666664px;overflow-wrap:break-word;white-space:pre-wrap;text-shadow:none;direction:ltr;flex-shrink:0;line-height:0;margin-block-start:0;margin-block-end:0;"
+																			data-reactid=".2.0:$4.1.0.$0.$4"><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;,&quot;Arial&quot;;font-size:16.666pt;color:#60BB45;min-width:35.986px;display:inline-block;text-indent:0;text-align:justify;"
+																				data-reactid=".2.0:$4.1.0.$0.$4.$bullet">•</span><span
+																				style="font-family:&quot;ArialBold Charset0_Bold3D70FAD3&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$4.$0">Học phần 5:</span><span
+																				style="font-family:&quot;Arial Charset0_v8wz5YMo9EE9FF07&quot;, &quot;Arial&quot;, sans-serif;color:#000000;font-size:16.666pt;font-style:normal;letter-spacing:0pt;line-height:24.825px;text-decoration:;"
+																				data-reactid=".2.0:$4.1.0.$0.$4.$1"> Các nội dung cơ bản trong Kế hoạch trả
+																				thưởng</span></li>
+																	</ul>
+																</div>
+																<div tabindex="-1" aria-role="scrollbar" aria-valuemin="0" aria-valuemax="100"
+																	aria-valuenow="0" aria-hidden="true"
+																	style="width: 15.748px; height: 274px; transform-origin: -483px 0px; transform: translate(9px, 9px); position: absolute; right: 16px;"
+																	data-reactid=".2.0:$4.1.1"></div>
+															</div>
+														</div><button class="acc-shadow-el acc-button" style="display: none;"
+															data-reactid=".2.1"></button>
+													</div>
+												</div>
+												<div class="acc-blocker" aria-hidden="true"></div>
+												<div data-dv_ref="contentArea" class="slide-layer base-layer shown"
+													data-display-name="SlideLayer" data-dv_comp="31"
+													style="pointer-events: none; z-index: 0; width: 1016px; height: 660.4px;"><span>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5oJIkEPWqhY"
+															data-acc-text="Picture 1.png" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 1; width: 955.04px; height: 60.96px; opacity: 1; transform-origin: 477.52px 30.48px; transform: translate(60px, 1px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 60.96px; width: 955.04px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="60.96" width="955.04" focusable="false" viewBox="0 0 940 60"
+																	data-commandset-id="0" data-accepts="events" data-dv_ref="ref-464">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L940,0 940,60 0,60z" id="uniqueDomId-465" fill="none"
+																			data-accepts="events"></path>
+																		<image transform="scale(0.5, 0.5)" id="uniqueDomId-466" data-original-image="01"
+																			x="0" y="0" opacity="1"
+																			xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5eYUsD6wJo5.png"
+																			height="120" width="1880" preserveAspectRatio="none" data-accepts="events">
+																		</image>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5hHV0go0spb"
+															data-acc-text="Picture 2.png" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 2; width: 59.944px; height: 660.4px; opacity: 1; transform-origin: 29.972px 330.2px; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 660.4px; width: 59.944px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="660.4" width="59.944" focusable="false" viewBox="0 0 59 650"
+																	data-commandset-id="1" data-accepts="events" data-dv_ref="ref-467">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L59,0 59,650 0,650z" id="uniqueDomId-468" fill="none"
+																			data-accepts="events"></path>
+																		<image transform="scale(0.4957983195781708, 0.5)" id="uniqueDomId-469"
+																			data-original-image="01" x="0" y="0" opacity="1"
+																			xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5rEPNgqL2Q4.png"
+																			height="1300" width="119" preserveAspectRatio="none" data-accepts="events">
+																		</image>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5Z7W9egJ2Mt"
+															data-acc-text="CƠ CHẾ ĐÁNH GIÁ" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 3; width: 607.568px; height: 42.672px; opacity: 1; transform-origin: 303.784px 21.336px; transform: translate(388px, 8px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 42.672px; width: 607.568px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="42.672" width="607.568" focusable="false" viewBox="0 0 598 42"
+																	data-commandset-id="2" data-accepts="events" data-dv_ref="ref-470">
+																	<g class="eventable" data-accepts="events">
+																		<g id="uniqueDomId-471" data-accepts="events">
+																			<path d="M0,0L598,0 598,42 0,42z" id="uniqueDomId-472" fill="none"
+																				data-accepts="events"></path>
+																		</g>
+																		<g id="uniqueDomId-473" class="uneventable" data-accepts="events">
+																			<g class="vector-text-item" data-display-name="VectorText" data-dv_comp="0">
+																				<g transform="rotate(0, 0, 0) translate(0, 0)">
+																					<g data-display-name="VectorTextItem" data-dv_comp="37"><text
+																							font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="20.832px" fill="#5FBB46" fill-opacity="1">
+																							<tspan
+																								x="397.6264648 412.67066 430.440916 436.2287101 451.2729053 466.3171005 480.211874 485.9996681 501.0438633 516.0880585 531.1322537 546.1764489 551.964243 568.1680318 573.9558259 589.0000211"
+																								y="28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54 28.54"
+																								aria-hidden="true">CƠ&nbsp;CHẾ&nbsp;ĐÁNH&nbsp;GIÁ</tspan>
+																						</text></g>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5ZNOK46FpG4"
+															data-acc-text="Chương trình đào tạo cơ bản 
+bao gồm tổng cộng 5 học phần " tabindex="-1" aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 4; width: 478.536px; height: 95.504px; opacity: 1; transform-origin: 238.76px 47.244px; transform: translate(66px, 86px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 95.504px; width: 478.536px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="95.504" width="478.536" focusable="false" viewBox="0 0 471 94"
+																	data-commandset-id="38" data-accepts="events" data-dv_ref="ref-476">
+																	<g class="eventable" data-accepts="events">
+																		<g id="uniqueDomId-477" data-accepts="events">
+																			<path
+																				d="M0,0L470.291870117188,0 470.291870117188,93.2172622680664 0,93.2172622680664z"
+																				id="uniqueDomId-478" fill="none" data-accepts="events"></path>
+																		</g>
+																		<g id="uniqueDomId-479" class="uneventable" data-accepts="events">
+																			<g class="vector-text-item" data-display-name="VectorText" data-dv_comp="0">
+																				<g transform="rotate(0, 0, 0) translate(0, 0)">
+																					<g data-display-name="VectorTextItem" data-dv_comp="37"><text
+																							font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="29.988px" fill="#60BB45" fill-opacity="1">
+																							<tspan
+																								x="9 30.6567116 48.9748631 70.6901455 92.0100727 110.3282242 128.6463757 143.8702097 153.8566036 165.5269203 173.8586769 192.1768284 210.4949799 225.7188139 244.0369654 260.7151232 279.0332747 294.2571087 304.2435026 320.9216604 339.2398119 354.4636459 371.1418037 392.4617309 407.6855649 426.0037164 442.6818742 461.0000257 469.3317823"
+																								y="37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129 37.129"
+																								aria-hidden="true">
+																								Chương&nbsp;trình&nbsp;đào&nbsp;tạo&nbsp;cơ&nbsp;bản&nbsp;</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="29.988px" fill="#60BB45" fill-opacity="1">
+																							<tspan
+																								x="9 27.3181515 43.9963093 62.3144608 70.6462174 88.9643689 107.2825204 133.9470712 142.2788278 152.2652217 170.5833732 188.9015247 207.2196762 215.5514328 232.2295906 250.5477421 268.8658936 287.1840451 295.5158017 312.1939595 320.5257161 338.8438676 357.1620191 373.8401769 382.1719335 400.490085 418.8082365 435.4863943 453.8045458 462.1363024"
+																								y="71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613 71.613"
+																								aria-hidden="true">
+																								bao&nbsp;gồm&nbsp;tổng&nbsp;cộng&nbsp;5&nbsp;học&nbsp;phần&nbsp;</tspan>
+																						</text></g>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5Y9ZZTQXppW"
+															data-acc-text="Học phần 1: Pháp luật về bán hàng đa cấp Học phần 2: Các chuẩn mực đạo đức trong hoạt động bán hàng đa cấp Học phần 3: Các nội dung cơ bản của Hợp đồng tham gia bán hàng đa cấp Học phần 4: Các nội dung cơ bản trong Quy tắc hoạt động Học phần 5: Các nội dung cơ bản trong Kế hoạch trả thưởng"
+															tabindex="-1" aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 5; width: 509.016px; height: 296.672px; opacity: 1; transform-origin: 254.508px 148.336px; transform: translate(57px, 216px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 296.672px; width: 509.016px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="296.672" width="509.016" focusable="false" viewBox="0 0 501 292"
+																	data-commandset-id="40" data-accepts="events" data-dv_ref="ref-482">
+																	<g class="eventable" data-accepts="events">
+																		<g id="uniqueDomId-483" data-accepts="events">
+																			<path d="M0,0L501,0 501,292 0,292z" id="uniqueDomId-484" fill="none"
+																				data-accepts="events"></path>
+																		</g>
+																		<g id="uniqueDomId-485" class="uneventable" data-accepts="events">
+																			<g class="vector-text-item" data-display-name="VectorText" data-dv_comp="0">
+																				<g transform="rotate(0, 0, 0) translate(0, 0)">
+																					<g data-display-name="VectorTextItem" data-dv_comp="37"><text
+																							font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#60BB45" fill-opacity="1">
+																							<tspan x="23 36.4218464" y="29.843" aria-hidden="true">●</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59.4218445 75.4694672 89.0432158 101.4017296 107.5755615 121.1493101 134.7230587 147.0815725 160.6553211 166.829153 179.1876668 186.5875854"
+																								y="29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843"
+																								aria-hidden="true">Học&nbsp;phần&nbsp;1:</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="186.5875854 192.7614174 207.5829535 219.9414673 232.2999811 244.6584949 250.8323268 255.7692222 268.127736 280.4862498 286.6600817 292.8339136 303.9446409 316.3031547 322.4769866 334.8355004 347.1940142 359.552528 365.7263599 378.0848737 390.4433875 402.8019013 415.1604151 421.334247 433.6927608 446.0512746 452.2251065 463.3358338 475.6943476 488.0528614"
+																								y="29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843 29.843"
+																								aria-hidden="true">
+																								&nbsp;Pháp&nbsp;luật&nbsp;về&nbsp;bán&nbsp;hàng&nbsp;đa&nbsp;cấp</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#60BB45" fill-opacity="1">
+																							<tspan x="23 36.4218464" y="66.396" aria-hidden="true">●</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59.4218445 75.4694672 89.0432158 101.4017296 115.3703976 128.9441462 142.5178948 154.8764086 168.4501572 182.4188252 194.777339 202.1772576"
+																								y="66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396"
+																								aria-hidden="true">Học&nbsp;phần&nbsp;2:</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="202.1772614 216.1459293 232.193552 244.5520658 255.6627931 269.6314611 280.7421884 293.1007022 305.459216 317.8177298 330.1762436 344.1449116 362.6555565 377.5313452 388.6420725 402.6107405 414.9692543 427.3277681 439.6862819 453.6549499 466.0134637 480.8892524 491.9999797 498.1738116"
+																								y="66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396 66.396"
+																								aria-hidden="true">&nbsp;Các&nbsp;chuẩn&nbsp;mực&nbsp;đạo&nbsp;đức&nbsp;
+																							</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59 65.1738319 72.5737505 84.9322643 97.2907781 109.6492919 115.8231238 128.1816376 140.5401514 152.8986652 159.0724971 165.246329 177.6048428 189.9633566 202.3218704 214.6803842 220.8542161 233.2127299 245.5712437 257.9297575 264.1035894 276.4621032 288.820617 301.1791308 313.5376446 319.7114765 332.0699903 344.4285041 350.602336 361.7130633 374.0715771 386.4300909"
+																								y="91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948 91.948"
+																								aria-hidden="true">
+																								trong&nbsp;hoạt&nbsp;động&nbsp;bán&nbsp;hàng&nbsp;đa&nbsp;cấp</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#60BB45" fill-opacity="1">
+																							<tspan x="23 36.4218464" y="128.501" aria-hidden="true">●</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59.4218445 75.4694672 89.0432158 101.4017296 107.8007336 121.3744822 134.9482308 147.3067446 160.8804932 167.2794972 179.638011 187.0379296"
+																								y="128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501"
+																								aria-hidden="true">Học&nbsp;phần&nbsp;3:</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="187.0379333 193.4369373 209.48456 221.8430738 232.9538011 239.3528051 251.7113189 264.0698327 269.0067281 275.4057321 287.7642459 300.1227597 312.4812735 324.8397873 331.2387913 342.3495186 356.9214972 363.3205012 375.679015 388.0375288 400.3960426 406.7950466 417.9057739 430.2642877 442.6228015 449.0218055 465.0694282 479.6414068 491.9999206 498.1737525"
+																								y="128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501 128.501"
+																								aria-hidden="true">
+																								&nbsp;Các&nbsp;nội&nbsp;dung&nbsp;cơ&nbsp;bản&nbsp;của&nbsp;Hợp&nbsp;
+																							</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59 71.3585138 83.7170276 96.0755414 108.4340552 114.6078871 120.781719 133.1402328 145.4987466 164.0093915 170.1832234 182.5417372 187.4786326 199.8371464 206.0109783 218.3694921 230.7280059 243.0865197 249.2603516 261.6188654 273.9773792 286.335893 298.6944068 304.8682387 317.2267525 329.5852663 335.7590982 346.8698255 359.2283393 371.5868531"
+																								y="154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053 154.053"
+																								aria-hidden="true">
+																								đồng&nbsp;tham&nbsp;gia&nbsp;bán&nbsp;hàng&nbsp;đa&nbsp;cấp</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#60BB45" fill-opacity="1">
+																							<tspan x="23 36.4218464" y="190.606" aria-hidden="true">●</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59.4218445 75.4694672 89.0432158 101.4017296 112.1201821 125.6939307 139.2676793 151.6261931 165.1999417 175.9183942 188.276908 195.6768266"
+																								y="190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606"
+																								aria-hidden="true">Học&nbsp;phần&nbsp;4:</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="195.6768341 206.3952866 222.4429093 234.8014231 245.9121504 256.6306029 268.9891167 281.3476305 286.2845259 297.0029784 309.3614922 321.720006 334.0785198 346.4370336 357.1554861 368.2662134 382.838192 393.5566445 405.9151583 418.2736721 430.6321859 441.3506384 447.5244703 454.9243889 467.2829027 479.6414165 491.9999303 498.1737622"
+																								y="190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606 190.606"
+																								aria-hidden="true">
+																								&nbsp;Các&nbsp;nội&nbsp;dung&nbsp;cơ&nbsp;bản&nbsp;trong&nbsp;</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59 76.2845592 88.643073 99.7538003 105.9276322 112.1014641 124.4599779 135.5707052 141.7445371 154.1030509 166.4615647 178.8200785 184.9939104 191.1677423 203.5262561 215.8847699 228.2432837 240.6017975"
+																								y="216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158 216.158"
+																								aria-hidden="true">Quy&nbsp;tắc&nbsp;hoạt&nbsp;động</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#60BB45" fill-opacity="1">
+																							<tspan x="23 36.4218464" y="252.711" aria-hidden="true">●</tspan>
+																						</text><text font-family="&quot;ArialBold Charset1_Bold6697BA37&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59.4218445 75.4694672 89.0432158 101.4017296 107.9092379 121.4829865 135.0567351 147.4152489 160.9889975 167.4965058 179.8550196 187.2549382"
+																								y="252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711"
+																								aria-hidden="true">Học&nbsp;phần&nbsp;5:</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="187.2549438 193.7624521 209.8100748 222.1685886 233.2793159 239.7868242 252.145338 264.5038518 269.4407472 275.9482555 288.3067693 300.6652831 313.0237969 325.3823107 331.889819 343.0005463 357.5725249 364.0800332 376.438547 388.7970608 401.1555746 407.6630829 413.8369148 421.2368334 433.5953472 445.953861 458.3123748 464.8198831 479.6414192 491.999933 498.1737649"
+																								y="252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711 252.711"
+																								aria-hidden="true">
+																								&nbsp;Các&nbsp;nội&nbsp;dung&nbsp;cơ&nbsp;bản&nbsp;trong&nbsp;Kế&nbsp;
+																							</tspan>
+																						</text><text font-family="&quot;Arial Charset1_ 6hY6K74F892B5BB&quot;"
+																							font-size="22.221px" fill="#000000" fill-opacity="1">
+																							<tspan
+																								x="59 71.3585138 83.7170276 96.0755414 107.1862687 119.5447825 125.7186144 131.8924463 139.2923649 151.6508787 157.8247106 163.9985425 176.3570563 191.232845 205.8048236 218.1633374 230.5218512"
+																								y="278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263 278.263"
+																								aria-hidden="true">hoạch&nbsp;trả&nbsp;thưởng</tspan>
+																						</text></g>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5vDbRDjnUMH"
+															data-acc-text="Picture 1.png" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 6; width: 416.56px; height: 559.816px; opacity: 1; transform-origin: 208.28px 279.908px; transform: translate(599px, 101px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 559.816px; width: 416.56px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="559.816" width="416.56" focusable="false" viewBox="0 0 410 551"
+																	data-commandset-id="42" data-accepts="events" data-dv_ref="ref-488">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L410,0 410,551 0,551z" id="uniqueDomId-489" fill="none"
+																			data-accepts="events"></path>
+																		<image transform="scale(0.5, 0.5)" id="uniqueDomId-490" data-original-image="01"
+																			x="0" y="0" opacity="1"
+																			xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6fQ5KFA0wQL.png"
+																			height="1102" width="820" preserveAspectRatio="none" data-accepts="events">
+																		</image>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="6GsEFDvFFEg"
+															data-acc-text="Google Shape;80;p15" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 7; width: 510.032px; height: 4.064px; opacity: 1; transform-origin: 252.984px 0px; transform: translate(50px, 198px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 7.112px; width: 513.08px; transform: translate(-3.048px, -3.048px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="6.096" width="512.064" focusable="false" viewBox="-3 -3 504 6"
+																	data-commandset-id="43" data-accepts="events" data-dv_ref="ref-491">
+																	<g class="eventable" data-accepts="events">
+																		<line id="uniqueDomId-492" x1="0" y1="0" x2="498.342" y2="0" stroke-width="1"
+																			stroke="#60BB45" stroke-opacity="1" stroke-linecap="flat" stroke-linejoin="round"
+																			transform="translate(0.5, 0.5)" data-accepts="events"></line>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-objgroup shown       " data-model-id="6W98ciSHZu0"
+															data-acc-text="Group 1" tabindex="-1" aria-hidden="true" data-display-name="SlideObject"
+															data-dv_comp="25"
+															style="z-index: 8; width: 61.976px; height: 519.176px; opacity: 1; transform-origin: 30.988px 259.588px; transform: translate(-2px, 141px) rotate(0deg) scale(1, 1);">
+															<div class="group" data-display-name="GroupingSlideObject" data-dv_comp="8"
+																style="width: 61.976px; height: 519.176px;">
+																<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+																	data-model-id="6hsu1sn1Lmc" data-acc-text="Rectangle 1" tabindex="-1"
+																	aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																	style="z-index: 1; width: 59.944px; height: 52.832px; opacity: 1; transform-origin: 29.972px 26.416px; transform: translate(2px, 64px) rotate(0deg) scale(1, 1);">
+																	<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																		data-dv_comp="5"
+																		style="height: 52.832px; width: 59.944px; transform: translate(0px, 0px);"><svg
+																			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																			data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																			height="52.832" width="59.944" focusable="false" viewBox="0 0 59 52"
+																			data-commandset-id="14" data-accepts="events" data-dv_ref="ref-493">
+																			<g class="eventable" data-accepts="events">
+																				<path d="M0,0L59,0 59,52 0,52z" id="uniqueDomId-494" fill="#4285F4"
+																					fill-opacity="0" data-accepts="events"></path>
+																			</g>
+																		</svg></div>
+																</div>
+																<div class="slide-object slide-object-stategroup hidden cursor-hover      "
+																	data-model-id="6od7VkpHhwy" data-acc-text="" tabindex="-1" aria-hidden="true"
+																	data-display-name="SlideObject" data-dv_comp="25"
+																	style="z-index: 2; width: 59.944px; height: 52.832px; opacity: 1; transform-origin: 29.972px 26.416px; transform: translate(2px, 64px) rotate(0deg) scale(1, 1);">
+																	<div class="group hidden" data-display-name="StateGroupSlideObject" data-dv_comp="9"
+																		style="width: 59.944px; height: 52.832px;">
+																		<div class="slide-object slide-object-vectorshape hidden       "
+																			data-model-id="6od7VkpHhwy" data-acc-text="Rectangle 2" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 1; width: 59.944px; height: 52.832px; opacity: 1; transform-origin: 29.972px 26.416px; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 52.832px; width: 59.944px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="52.832" width="59.944" focusable="false"
+																					viewBox="0 0 59 52" data-commandset-id="14" data-accepts="events"
+																					data-dv_ref="ref-495">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L59,0 59,52 0,52z" id="uniqueDomId-496" fill="#4285F4"
+																							fill-opacity="0" data-accepts="events"></path>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="slide-object slide-object-vectorshape hidden       "
+																			data-model-id="6lCD3ohXAdH" data-acc-text="Rectangle 1" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 2; width: 39.624px; height: 42.672px; opacity: 1; transform-origin: 19.812px 21.336px; transform: translate(12px, 8px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 42.672px; width: 39.624px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="42.672" width="39.624" focusable="false"
+																					viewBox="0 0 39 42" data-commandset-id="15" data-accepts="events"
+																					data-dv_ref="ref-497">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L39,0 39,42 0,42z" id="uniqueDomId-498" fill="#5FBB46"
+																							fill-opacity="1" data-accepts="events"></path>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="slide-object slide-object-vectorshape hidden       "
+																			data-model-id="66hUojDAoqj" data-acc-text="pause.png" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 3; width: 45.72px; height: 42.672px; opacity: 1; transform-origin: 22.86px 21.336px; transform: translate(12px, 8px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 42.672px; width: 45.72px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="42.672" width="45.72" focusable="false"
+																					viewBox="0 0 45 42" data-commandset-id="16" data-accepts="events"
+																					data-dv_ref="ref-499">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L45,0 45,42 0,42z" id="uniqueDomId-500" fill="none"
+																							data-accepts="events"></path>
+																						<image transform="scale(1, 1)" id="uniqueDomId-501" data-original-image="01"
+																							x="0" y="0" opacity="1"
+																							xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6ZRDPW5SODk.png"
+																							height="42" width="45" preserveAspectRatio="none" data-accepts="events">
+																						</image>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="state-group-top-level"></div>
+																	</div>
+																</div>
+																<div class="slide-object slide-object-stategroup hidden cursor-hover      "
+																	data-model-id="6UhtSDjV7OL" data-acc-text="" tabindex="-1" aria-hidden="true"
+																	data-display-name="SlideObject" data-dv_comp="25"
+																	style="z-index: 3; width: 61.976px; height: 89.408px; opacity: 1; transform-origin: 30.988px 44.704px; transform: translate(0px, 430px) rotate(0deg) scale(1, 1);">
+																	<div class="group hidden" data-display-name="StateGroupSlideObject" data-dv_comp="9"
+																		style="width: 61.976px; height: 89.408px;">
+																		<div class="slide-object slide-object-vectorshape shown       "
+																			data-model-id="6UhtSDjV7OL" data-acc-text="Asset 13n.png" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 1; width: 61.976px; height: 89.408px; opacity: 1; transform-origin: 30.988px 44.704px; transform: translate(0px, 0px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 89.408px; width: 61.976px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="89.408" width="61.976" focusable="false"
+																					viewBox="0 0 61 88" data-commandset-id="17" data-accepts="events"
+																					data-dv_ref="ref-502">
+																					<g data-accepts="events"></g>
+																				</svg></div>
+																		</div>
+																		<div class="slide-object slide-object-vectorshape shown       "
+																			data-model-id="5s6MOC34HxS" data-acc-text="Asset 8n.png" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 2; width: 36.576px; height: 61.976px; opacity: 1; transform-origin: 18.288px 30.988px; transform: translate(16px, 13px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 61.976px; width: 36.576px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="61.976" width="36.576" focusable="false"
+																					viewBox="0 0 36 61" data-commandset-id="18" data-accepts="events"
+																					data-dv_ref="ref-503">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L36,0 36,61 0,61z" id="uniqueDomId-504" fill="none"
+																							data-accepts="events"></path>
+																						<image transform="scale(1, 1)" id="uniqueDomId-505" data-original-image="01"
+																							x="0" y="0" opacity="0.77"
+																							xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6YgP6jHNTs6.png"
+																							height="61" width="36" preserveAspectRatio="none" data-accepts="events">
+																						</image>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="slide-object slide-object-vectorshape shown       "
+																			data-model-id="6TE5pxOCJj5" data-acc-text="Rectangle 1" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 3; width: 55.88px; height: 82.296px; opacity: 1; transform-origin: 27.94px 41.148px; transform: translate(4px, 7px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 82.296px; width: 55.88px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="82.296" width="55.88" focusable="false"
+																					viewBox="0 0 55 81" data-commandset-id="19" data-accepts="events"
+																					data-dv_ref="ref-506">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L55,0 55,80.9625244140625 0,80.9625244140625z"
+																							id="uniqueDomId-507" fill="#5FBB46" fill-opacity="1"
+																							data-accepts="events"></path>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="slide-object slide-object-vectorshape shown       "
+																			data-model-id="6owtRCsAcrM" data-acc-text="Asset 8n.png" tabindex="-1"
+																			aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																			style="z-index: 4; width: 36.576px; height: 61.976px; opacity: 1; transform-origin: 18.288px 30.988px; transform: translate(16px, 14px) rotate(0deg) scale(1, 1);">
+																			<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																				data-dv_comp="5"
+																				style="height: 61.976px; width: 36.576px; transform: translate(0px, 0px);"><svg
+																					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																					data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1"
+																					baseprofile="full" height="61.976" width="36.576" focusable="false"
+																					viewBox="0 0 36 61" data-commandset-id="20" data-accepts="events"
+																					data-dv_ref="ref-508">
+																					<g class="eventable" data-accepts="events">
+																						<path d="M0,0L36,0 36,61 0,61z" id="uniqueDomId-509" fill="none"
+																							data-accepts="events"></path>
+																						<image transform="scale(1, 1)" id="uniqueDomId-510" data-original-image="01"
+																							x="0" y="0" opacity="0.79"
+																							xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6YgP6jHNTs6.png"
+																							height="61" width="36" preserveAspectRatio="none" data-accepts="events">
+																						</image>
+																					</g>
+																				</svg></div>
+																		</div>
+																		<div class="state-group-top-level"></div>
+																	</div>
+																</div>
+																<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+																	data-model-id="5dPtusorMIy" data-acc-text="Rectangle 1" tabindex="-1"
+																	aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25"
+																	style="z-index: 4; width: 59.944px; height: 50.8px; opacity: 1; transform-origin: 29.972px 25.4px; transform: translate(2px, 0px) rotate(0deg) scale(1, 1);">
+																	<div class="slideobject-maskable" data-display-name="VectorSlideObject"
+																		data-dv_comp="5"
+																		style="height: 50.8px; width: 59.944px; transform: translate(0px, 0px);"><svg
+																			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																			data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																			height="50.8" width="59.944" focusable="false" viewBox="0 0 59 50"
+																			data-commandset-id="21" data-accepts="events" data-dv_ref="ref-511">
+																			<g class="eventable" data-accepts="events">
+																				<path d="M0,0L59,0 59,50 0,50z" id="uniqueDomId-512" fill="#4285F4"
+																					fill-opacity="0" data-accepts="events"></path>
+																			</g>
+																		</svg></div>
+																</div>
+															</div>
+														</div>
+													</span>
+													<div data-dv_ref="allAudio" class="hidden"><span data-display-name="AudioPlayer"
+															data-dv_comp="36"></span></div>
+												</div>
+												<div data-dv_ref="contentArea" class="slide-layer  hidden" data-display-name="SlideLayer"
+													data-dv_comp="31" style="pointer-events: none; z-index: 0; width: 1016px; height: 660.4px;">
+													<span></span>
+													<div data-dv_ref="allAudio" class="hidden"></div>
+												</div>
+												<div data-dv_ref="contentArea" class="slide-layer  hidden" data-display-name="SlideLayer"
+													data-dv_comp="31" style="pointer-events: none; z-index: 0; width: 1016px; height: 660.4px;">
+													<span></span>
+													<div data-dv_ref="allAudio" class="hidden"></div>
+												</div>
+												<div data-dv_ref="contentArea" class="slide-layer  shown" data-display-name="SlideLayer"
+													data-dv_comp="31" style="pointer-events: none;z-index: 1;width: 1016px;height: 660.4px;"><span
+														style="
+">
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="5hPASxDlUvO" data-acc-text="Rectangle 6" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 1;width: 50.8px;height: 65.024px;opacity: 1;transform-origin: 25.4px 32.512px;transform: translate(4px, 583px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 65.024px; width: 50.8px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="65.024" width="50.8" focusable="false" viewBox="0 0 50 64"
+																	data-commandset-id="32" data-accepts="events" data-dv_ref="ref-513">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L49.7465515136719,0 49.7465515136719,64 0,64z" id="uniqueDomId-514"
+																			fill="#4285F4" fill-opacity="0" data-accepts="events"></path>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="6RTXY8a3Sfa" data-acc-text="Rectangle 1" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 2;width: 60.96px;height: 65.024px;opacity: 1;transform-origin: 29.972px 32.512px;transform: translate(0px, 72px) rotate(0deg) scale(1, 1);display: none;">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 65.024px; width: 60.96px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="65.024" width="60.96" focusable="false" viewBox="0 0 60 64"
+																	data-commandset-id="33" data-accepts="events" data-dv_ref="ref-515">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L59.493091583252,0 59.493091583252,64 0,64z" id="uniqueDomId-516"
+																			fill="#4285F4" fill-opacity="0" data-accepts="events"></path>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="6d0MJo7PWFR" data-acc-text="Rectangle 7" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 3; width: 60.96px; height: 65.024px; opacity: 1; transform-origin: 29.972px 32.512px; transform: translate(-2px, -1px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 65.024px; width: 60.96px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="65.024" width="60.96" focusable="false" viewBox="0 0 60 64"
+																	data-commandset-id="33" data-accepts="events" data-dv_ref="ref-517">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L59.493091583252,0 59.493091583252,64 0,64z" id="uniqueDomId-518"
+																			fill="#4285F4" fill-opacity="0" data-accepts="events"></path>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="6DBRoDcp2iW" data-acc-text="Rectangle 4" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 4; width: 60.96px; height: 65.024px; opacity: 1; transform-origin: 29.972px 32.512px; transform: translate(-1px, 265px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 65.024px; width: 60.96px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="65.024" width="60.96" focusable="false" viewBox="0 0 60 64"
+																	data-commandset-id="33" data-accepts="events" data-dv_ref="ref-519">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L59.493091583252,0 59.493091583252,64 0,64z" id="uniqueDomId-520"
+																			fill="#4285F4" fill-opacity="0" data-accepts="events"></path>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="5ygxHDktpP3" data-acc-text="Rectangle 5" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 5;width: 60.96px;height: 42.672px;opacity: 1;transform-origin: 29.972px 21.336px;transform: translate(-1px, 528px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 42.672px; width: 60.96px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="42.672" width="60.96" focusable="false" viewBox="0 0 60 42"
+																	data-commandset-id="34" data-accepts="events" data-dv_ref="ref-521">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L59.4930953979492,0 59.4930953979492,42 0,42z" id="uniqueDomId-522"
+																			fill="#4285F4" fill-opacity="0" data-accepts="events"></path>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="5WRfzXmXItB" data-acc-text="chatBtn.png" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 6; width: 206.248px; height: 35.56px; opacity: 1; transform-origin: 103.124px 17.78px; transform: translate(784px, 626px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 35.56px; width: 206.248px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="35.56" width="206.248" focusable="false" viewBox="0 0 203 35"
+																	data-commandset-id="35" data-accepts="events" data-dv_ref="ref-523">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L203,0 203,35 0,35z" id="uniqueDomId-524" fill="none"
+																			data-accepts="events"></path>
+																		<image transform="scale(1, 1)" id="uniqueDomId-525" data-original-image="01" x="0"
+																			y="0" opacity="1"
+																			xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/5zGbZfgpuQk.png"
+																			height="35" width="203" preserveAspectRatio="none" data-accepts="events"></image>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown cursor-hover      "
+															data-model-id="6KM1cSj5mWK" data-acc-text="thoat.png" tabindex="-1" aria-hidden="true"
+															data-display-name="SlideObject" data-dv_comp="25"
+															style="z-index: 7; width: 42.672px; height: 24.384px; opacity: 1; transform-origin: 21.336px 12.192px; transform: translate(9px, 334px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 24.384px; width: 42.672px; transform: translate(0px, 0px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="24.384" width="42.672" focusable="false" viewBox="0 0 42 24"
+																	data-commandset-id="36" data-accepts="events" data-dv_ref="ref-526">
+																	<g class="eventable" data-accepts="events">
+																		<path d="M0,0L42,0 42,24 0,24z" id="uniqueDomId-527" fill="none"
+																			data-accepts="events"></path>
+																		<image transform="scale(1, 1)" id="uniqueDomId-528" data-original-image="01" x="0"
+																			y="0" opacity="1"
+																			xlink:href="/contentstream/titles/files/content/Custom/herballife-intuition-com/Content/imported_21146991/Web/mobile/6dA5KRyID9d.png"
+																			height="24" width="42" preserveAspectRatio="none" data-accepts="events"></image>
+																	</g>
+																</svg></div>
+														</div>
+														<div class="slide-object slide-object-vectorshape shown       " data-model-id="5jr6Wamfp78"
+															data-acc-text="Line 1" tabindex="-1" aria-hidden="true" data-display-name="SlideObject"
+															data-dv_comp="25"
+															style="z-index: 8; width: 57.912px; height: 4.064px; opacity: 1; transform-origin: 26.416px -0.508px; transform: translate(3px, 319px) rotate(0deg) scale(1, 1);">
+															<div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5"
+																style="height: 7.112px; width: 60.96px; transform: translate(-3.048px, -3.048px);"><svg
+																	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																	data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full"
+																	height="6.096" width="59.944" focusable="false" viewBox="-3 -3 59 6"
+																	data-commandset-id="37" data-accepts="events" data-dv_ref="ref-529">
+																	<g class="eventable" data-accepts="events">
+																		<line id="uniqueDomId-530" x1="0" y1="0" x2="53" y2="0" stroke-width="1"
+																			stroke="#FFFFFF" stroke-opacity="0.43" stroke-linecap="flat"
+																			stroke-linejoin="round" transform="translate(0.5, 0.5)" data-accepts="events">
+																		</line>
+																	</g>
+																</svg></div>
+														</div>
+													</span>
+													<div data-dv_ref="allAudio" class="hidden"></div>
+												</div>
+												<div data-dv_ref="contentArea" class="slide-top-container slide-top-container-main"></div>
+												<div class="slide-text-fix"></div>
+												<div data-dv_ref="mouse-blocker" class="mouse-blocker truly-visible"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="load-container" style="width: 1016px;" data-reactid=".0.0.1.3">
+									<div class="slide-loader" data-reactid=".0.0.1.3.0">
+										<div class="mobile-loader-dot dot1" data-reactid=".0.0.1.3.0.0"></div>
+										<div class="mobile-loader-dot dot2" data-reactid=".0.0.1.3.0.1"></div>
+										<div class="mobile-loader-dot dot3" data-reactid=".0.0.1.3.0.2"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div><button id="skipnav" aria-label="Lên đầu trang" data-tabindex="0" tabindex="0"
+				style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; cursor: pointer; display: none; width: 24px; height: 24px; transform: translate(-100px, -100px);">Lên
+				đầu trang</button>
+			<section id="bottom-bar"
+				style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; height: 65px; z-index: 3; display: none; width: 1016px; transform: translate(0px, 746px);">
+				<div id="playback-controls" aria-label="playback controls" role="region" tabindex="-1"
+					style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; width: 0px; height: 65px; transform: translate(0px, 0px); visibility: hidden; pointer-events: none;"
+					data-tabindex="-1"><button id="play-pause" class="content-center cs-button" aria-pressed="true"
+						aria-label="Phát (Ctrl+Alt+P)" data-tabindex="0" tabindex="0"
+						style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 1; background: transparent; border: none; cursor: pointer; width: 34px; height: 34px; transform: translate(0px, 16px); display: none;">
+						<div class="view-content" tabindex="-1"
+							style="position: relative; text-align: center; top: 0px; width: 34px; height: 34px;" data-tabindex="-1">
+							<svg id="icon-play" class="cs-icon play-icon" width="14" height="16" viewBox="0 0 14 16"
+								focusable="false">
+								<path
+									d="M1.4 15.4C0.8 15.8 0 15.3 0 14.5L0 1.4C0 0.6 0.8 0.1 1.4 0.5L12.9 7.1C13.5 7.5 13.5 8.4 12.9 8.8L8.0 11.6L1.4 15.4Z"
+									stroke="none"></path>
+							</svg></div>
+					</button>
+					<div id="seek" tabindex="-1" class="progress-bar cs-seekcontrol"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 0px; height: 30px; transform: translate(0px, 18px); display: none;"
+						data-tabindex="-1">
+						<style>
+							#seek:before {
+								border: 1px solid rgba(0, 0, 0, 0);
+								background-image: initial;
+								background-repeat: no-repeat !important;
+							}
+						</style>
+
+						<div class="cs-seekbar-inner progress-bar-inner slide-lockable">
+							<div data-ref="seek" class="cs-seek progress-bar-seek">
+								<div class="progress-bar-fill-preview cs-fill" data-ref="progressPreview"></div>
+								<input tabindex="0" type="range" aria-hidden="true" aria-label="tiến trình slide" data-ref="progressBar"
+									data-tabindex="0" max="26921" step="100" aria-valuetext="100%">
+								<div class="cs-fill cs-brandhighlight-bg progress-bar-fill" style="width: 100%;"
+									data-ref="progressBarFill">
+									<div class="prev-progress-bar-fill-preview cs-fill" data-ref="prevProgressPreview"></div>
+								</div>
+							</div>
+						</div>
+					</div><button id="reset" class="content-center cs-button" aria-label="Phát lại (Ctrl+Alt+R)" data-tabindex="0"
+						tabindex="0"
+						style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 1; background: transparent; border: none; cursor: pointer; width: 30px; height: 30px; transform: translate(0px, 18px); display: none;"><svg
+							class="cs-icon" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" focusable="false">
+							<path fill="#FFFFFF" stroke="none" d="
+	M 10.95 8.75
+	Q 11 9 11 9.25 10.95 11.15 9.7 12.4 8.4 13.7 6.5 13.75 4.6 13.7 3.3 12.4 2.05 11.15 2 9.25 2.05 7.3 3.3 6.05 4.398828125 4.998828125 6 4.75
+	L 6 6.9
+	Q 6.05 7.75 6.85 7.35
+	L 11.35 4.3
+	Q 11.7 4.05 11.7 3.75 11.7 3.45 11.35 3.2
+	L 6.85 0.15
+	Q 6.05 -0.3 6 0.6
+	L 6 2.75
+	Q 3.4517578125 3.001171875 1.8 4.75 0.05 6.6 0 9.25 0.05 12 1.9 13.85 3.75 15.65 6.5 15.75 9.25 15.65 11.1 13.85 12.95 12 13 9.25 13 9 13 8.75
+	L 10.95 8.75 Z"></path>
+						</svg></button>
+				</div>
+				<div id="misc-controls" aria-label="misc controls" role="region"
+					style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 0px; height: 65px; transform: translate(1016px, 0px);">
+					<div id="volume" class="btn cs-volume cs-button volume-panel volume"
+						style="position: absolute; left: 0px; top: 17px; overflow: visible; transform-origin: center center; width: 30px; height: 30px; transform: translate(0px, 0px); display: none;">
+						<button data-ref="button" class="cs-button" aria-label="Tắt tiếng (Ctrl+Alt+M)" aria-pressed="false"
+							tabindex="0" data-tabindex="0"><svg class="cs-icon volume-icon " width="16px" height="14px"
+								viewBox="0 0 16 14" focusable="false">
+								<rect x="0" y="4" width="3" height="6"></rect>
+								<polygon points="4 4 9 0 9 14 4 10"></polygon>
+								<g transform="translate(10, 0)">
+									<mask id="vol-mask" fill="white">
+										<rect id="path-1" x="0" y="0" width="8" height="14" style="fill: white;"></rect>
+									</mask>
+									<circle strokewidth="1.5" style="opacity: 1;" mask="url(#vol-mask)" fill="none" cx="-1" cy="7"
+										r="6.5"></circle>
+									<circle strokewidth="1.5" style="opacity: 1;" mask="url(#vol-mask)" fill="none" cx="-1" cy="7"
+										r="3.5"></circle>
+								</g>
+
+							</svg></button>
+						<div data-ref="sliderBar" class="slider-bar btn" style="width: 30px; height: 75px">
+							<input type="range" class="cs-volume volume-range" data-ref="volumeRange" aria-label="volume" min="0"
+								max="10" step="1" value="8" tabindex="0" aria-orientation="vertical" data-tabindex="0">
+							<div class="volume-track"></div>
+							<div data-ref="volumeProgress" class="volume-progress cs-brandhighlight-bg"
+								style="background: rgb(79, 189, 244); height: 44px;"></div>
+							<div data-ref="volumeDot" class="volume-dot" style="top: 11px;"></div>
+						</div>
+					</div>
+					<div id="playback-speed" class="btn cs-button cs-settings"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 30px; height: 30px; transform: translate(0px, 18px); display: none;">
+						<button data-ref="toggleBtn" aria-expanded="false" class="cs-button" aria-label="Tốc độ phát lại"
+							tabindex="0" data-tabindex="0">
+
+							<svg class="cs-icon" width="15" height="15" viewBox="0 0 15 15" focusable="false">
+								<path
+									d="M5.9 4.0L10.4 7.4L5.9 10.8V4.0ZM1.5 8.2H0.0C0.1 9.6 0.6 10.9 1.5 12.0L2.6 11.0C2.0 10.1 1.6 9.2 1.5 8.2H1.5ZM15 7.4H14.9C14.9 5.6 14.3 3.8 13.0 2.4C11.8 1.0 10.0 0.1 8.2 0.0V1.5C10.1 1.7 11.8 2.9 12.8 4.7C13.7 6.4 13.7 8.5 12.8 10.2C11.8 12.0 10.1 13.1 8.2 13.4V14.9C10.0 14.7 11.8 13.8 13.0 12.5C14.3 11.1 14.9 9.3 14.9 7.4L15 7.4ZM3.6 12.1L2.5 13.1C3.7 14.1 5.1 14.8 6.7 14.9V13.4V13.4C5.5 13.3 4.5 12.8 3.6 12.1V12.1ZM2.6 3.9L1.5 2.8C0.6 3.9 0.1 5.3 0 6.7H1.5H1.5C1.6 5.7 2.0 4.7 2.6 3.9H2.6ZM6.7 1.5V0.0C5.1 0.1 3.7 0.7 2.5 1.7L3.6 2.8C4.5 2.1 5.5 1.6 6.7 1.5V1.5Z"
+									stroke="none"></path>
+							</svg>
+
+						</button>
+						<div data-ref="contentPanel" class="settings-panel" tabindex="-1" style="left: 10px;" data-tabindex="-1">
+							<div class="content">
+								<div data-ref="playbackSpeedTitle" class="cs-heading title">Tốc độ phát lại</div>
+								<ul data-ref="playbackSpeedWrapper" aria-label="Tốc độ phát lại" role="menu">
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="2" data-index="0" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="2" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">2</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="1.75" data-index="1" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="1.75" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">1.75</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="1.5" data-index="2" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="1.5" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">1.5</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="1.25" data-index="3" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="1.25" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">1.25</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div data-ref="ariaNormal" class="cs-listitem menu-choice selected" data-speed="1" data-index="4"
+											tabindex="0" role="menuitemcheckbox" aria-checked="true" aria-label="Bình thường"
+											data-tabindex="0">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label" data-ref="labelNormal">Bình thường</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="0.75" data-index="5" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="0.75" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">0.75</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="0.5" data-index="6" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="0.5" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">0.5</div>
+										</div>
+									</li>
+
+									<li tabindex="-1" data-tabindex="-1">
+										<div class="cs-listitem menu-choice " data-speed="0.25" data-index="7" tabindex="-1"
+											role="menuitemcheckbox" aria-checked="false" aria-label="0.25" data-tabindex="-1">
+											<div class="selected-icon" style="fill:rgb(79, 189, 244);">
+												<svg width="12" height="9" viewBox="0 0 12 9">
+													<path d="M10 0.3 L11.5 1.7 L4.3 8.9 L0 4.7 L1.4 3.2 L4.3 6.1 L10 0.3 Z" stroke="none"></path>
+												</svg>
+											</div>
+											<div class="label">0.25</div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+							<div class="panel-down-arrow" style="height: 18px; width: 18px; position: absolute;">
+								<div data-ref="contentPanelArrow" style="height: 100%; width: 100%; transform: translateX(-10px);">
+
+									<div
+										style="height: 100%; width: 100%; background-color: rgb(33, 33, 33); border-right: 1px solid; border-bottom: 1px solid; border-color: rgb(69, 69, 69); border-bottom-right-radius: 3px; transform: rotate(45deg);">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav id="nav-controls" aria-label="slide navigation"
+					style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; width: 0px; height: 65px; transform: translate(1016px, 0px);">
+					<button id="full-screen-toggle" class="cs-button btn fullscreen-open-btn" data-tabindex="0" tabindex="0"
+						aria-label="Vào chế độ toàn màn hình (Ctrl+Alt+F)"
+						style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 1; cursor: pointer; width: 30px; height: 58px; transform: translate(0px, 4px); display: none;">
+						<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+							data-tabindex="-1">
+							<svg class="cs-icon enter-fullscreen-icon" width="14" height="14" viewBox="0 0 14 14" focusable="false">
+								<path d="M1.99055 2.3H5.1V0.4H0.1V5.2H1.9L1.9 2.3Z" stroke="none"></path>
+								<path d="M5.1 11.8H1.9V8.9H0.1V13.6H5.1L5.1 11.8Z" stroke="none"></path>
+								<path d="M11.5 11.8H8.4V13.6H13.3V8.9H11.5L11.5 11.8Z" stroke="none"></path>
+								<path d="M8.4 2.3H11.5V5.2H13.3V0.4H8.4L8.4 2.3Z" stroke="none"></path>
+							</svg>
+						</div>
+					</button><button id="prev" class="cs-button btn" aria-label="Trước (Ctrl+Alt+Phẩy)" data-tabindex="0"
+						tabindex="0"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; cursor: pointer; width: 92px; height: 30px; transform: translate(0px, 18px); display: none;"
+						aria-disabled="false">
+						<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+							data-tabindex="-1"><span class="btn-icon">
+								<svg class="cs-icon prev-icon" width="10px" height="18px" viewBox="0 -1 10 18" focusable="false">
+									<path transform="translate(0, 1)"
+										d="M2.81685219,7.60265083 L9.00528946,1.41421356 L7.5910759,-1.27897692e-13 L1.55431223e-13,7.5910759 L0.0115749356,7.60265083 L1.55431223e-13,7.61422577 L7.5910759,15.2053017 L9.00528946,13.7910881 L2.81685219,7.60265083 Z"
+										stroke="none" fillrule="evenodd"></path>
+								</svg>
+							</span>
+							<span data-ref="label" class="text ">TRƯỚC</span>
+						</div>
+					</button><button id="next" class="cs-button btn " aria-label="Kế tiếp (Ctrl+Alt+Chấm)" data-tabindex="0"
+						tabindex="0"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; cursor: pointer; width: 118px; height: 30px; transform: translate(0px, 18px); display: none;">
+						<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+							data-tabindex="-1"><span data-ref="label" class="text ">TIẾP THEO</span>
+							<span class="btn-icon">
+								<svg class="cs-icon next-icon" width="10px" height="18px" viewBox="0 -1 10 18" focusable="false">
+									<path transform="rotate(180, 5, 8)"
+										d="M2.81685219,7.60265083 L9.00528946,1.41421356 L7.5910759,-1.27897692e-13 L1.55431223e-13,7.5910759 L0.0115749356,7.60265083 L1.55431223e-13,7.61422577 L7.5910759,15.2053017 L9.00528946,13.7910881 L2.81685219,7.60265083 Z"
+										stroke="none" fillrule="evenodd"></path>
+								</svg></span>
+						</div>
+					</button><button id="submit" class="cs-button btn " aria-label="Gửi (Ctrl+Alt+S)" data-tabindex="0"
+						tabindex="0"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; cursor: pointer; width: 76px; height: 30px; transform: translate(0px, 18px); display: none;">
+						<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+							data-tabindex="-1"><span data-ref="label" class="text ">GỬI</span>
+							<span class="btn-icon">
+								<svg class="cs-icon check-icon" width="17px" height="18px" viewBox="0 0 17 16" focusable="false">
+									<path stroke="none" transform="translate(0, 1)"
+										d="M 17 1.4 L 15.6 0 5.7 9.9 1.4 5.65 0 7.05 5.65 12.75 5.7 12.75 17 1.4 Z"></path>
+								</svg></span>
+						</div>
+					</button></nav>
+			</section>
+			<section id="sidebar" class="cs-left area-secondary-wrapper" aria-label="sidebar"
+				style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; display: none; width: 0px; height: 811px; transform: translate(0px, 0px) translateX(0px);">
+				<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+					data-tabindex="-1">
+					<style>
+						.selected-animation-done:after {
+							background: rgb(79, 189, 244);
+						}
+					</style>
+					<div class="slider-mask" data-ref="sliderMask">
+						<div class="tab-selected-slider cs-brandhighlight-bg" data-ref="tabSelectedSlider"></div>
+					</div>
+					<div id="tabs" role="tablist" tabindex="-1" aria-label="sidebar-tabs" class="tabs"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 254px; height: 65px; transform: translate(0px, 0px);"
+						data-tabindex="-1"></div>
+					<div id="sidebar-panels"
+						style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 1; width: 254px; height: 746px; transform: translate(0px, 65px);">
+					</div>
+				</div><button id="hamburger" aria-expanded="true" aria-controls="sidebar" aria-label="Bật/tắt thanh bên"
+					tabindex="0"
+					style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; cursor: pointer; width: 50px; height: 65px; transform: translate(254px, 0px);"
+					data-tabindex="0">
+					<div class="menu-icon-wrapper" data-ref="wrapper">
+
+						<svg class="cs-icon" width="30px" height="12px" viewBox="0 10 30 12" focusable="false">
+							<path transform="translate(0, 1)"
+								d="M0,15 L17,15 L17,17 L0,17 L0,15 Z M0,11 L17,11 L17,13 L0,13 L0,11 Z M0,19 L17,19 L17,21 L0,21 L0,19 Z">
+							</path>
+						</svg>
+
+					</div>
+				</button>
+			</section>
+			<section id="top-bar" aria-label="top bar"
+				style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 1016px; height: 0px; transform: translate(0px, 0px);">
+				<h1 class="presentation-title cs-title"
+					style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; display: none; width: 4px; height: 22px; transform: translate(22px, -11px);">
+					<div class="view-content" tabindex="-1" style="position: relative; text-align: center; top: 0px;"
+						data-tabindex="-1">
+						<div data-ref="label" class="presentation-title-text"></div>
+					</div>
+				</h1>
+				<div id="top-tabs" role="navigation"
+					style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; width: 1016px; height: 0px; transform: translate(0px, 0px);">
+					<div id="arrow-shadow"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; display: none; width: 17px; height: 17px; transform: translate(0px, 0px);">
+						<div class="panel-arrow" data-ref="arrow" style="height: 17px; width: 17px; position: absolute;">
+							<div class="panel-arrow-path" style="
+			height: 100%;
+			width: 100%;
+			background-color: rgb(33, 33, 33);
+			border-left: 1px solid;
+			border-top: 1px solid;
+			border-color: rgb(33, 33, 33);
+			border-top-left-radius: 3px;
+			transform: rotate(45deg);
+			">
+							</div>
+						</div>
+					</div>
+					<div id="links-right" tabindex="-1"
+						style="position: absolute; left: -1px; top: 0px; overflow: visible; transform-origin: center center; z-index: 5; width: 986px; height: 22px; transform: translate(20px, -11px); display: none;"
+						data-tabindex="-1"></div>
+				</div>
+				<div id="top-ellipsis"
+					style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; display: none; width: 58px; height: 0px; transform: translate(1006px, 0px);">
+					<button class="top-tabs-drop-icon cs-button btn" data-ref="icon" aria-expanded="false"
+						aria-controls="top-ellipsis-panel" aria-label="top_links">
+						<div></div>
+						<div></div>
+						<div></div>
+					</button>
+
+
+					<div class="panel-arrow" data-ref="arrow"
+						style="height: 17px; width: 17px; position: absolute; display: none;">
+						<div class="panel-arrow-path" style="
+			height: 100%;
+			width: 100%;
+			background-color: rgb(33, 33, 33);
+			border-left: 1px solid;
+			border-top: 1px solid;
+			border-color: rgb(69, 69, 69);
+			border-top-left-radius: 3px;
+			transform: rotate(45deg);
+			">
+						</div>
+					</div>
+					<div id="top-ellipsis-panel" class="top-ellipsis-panel top-tabs-drop" aria-expanded="false"
+						aria-controls="temp-container"
+						style="position: absolute; left: 0px; top: 0px; overflow: visible; transform-origin: center center; display: none; width: 100px; height: 100px; transform: translate(-10px, -10px);">
+						<div class="panel-links" data-ref="links">
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="caption-container"
+		style="position: absolute; left: 0px; top: 0px; overflow: hidden; transform-origin: center center; z-index: 2; font-size: 100%; width: 1016px; height: 746px; transform: translate(0px, 0px);">
+		<div class="caption" data-display-name="Captions" data-dv_comp="27"
+			style="bottom: 0%; margin-bottom: 0px; top: unset;"></div>
+	</div>
+	<div id="app-top" style="position: absolute; left: 0px; top: 0px;">
+		<div id="app-top-overlay"></div>
+		<div id="app-top-container"></div>
+		<div id="app-focus-container" class="focus-container"></div>
+	</div>
+</div>
