@@ -1,4 +1,7 @@
 
+// File này khai báo các biến trong phạm vi window của iframe
+// iframe.contentWindow
+
 var VERSION = "7.7.0";
 
 var PREFERENCE_DEFAULT = 0;
