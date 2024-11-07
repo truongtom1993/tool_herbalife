@@ -1,4 +1,5 @@
 !(function () {
+	return;
 	var __webpack_modules__ = {
 		1: function (t, e, n) {
 			/*
@@ -120,23 +121,14 @@
 })();
 
 (function a1() {
-	var i, r;
-	(i = 1),
-		void 0 !==
-			(r = function (a, b, c) {
-				i = 3;
-				console.info(`🟠 pageTest/index.js	Line:127	ID:4fdf8f`, a, c);
-
-				Promise.resolve().then(function () {
-					console.info(`🟠 pageTest/index.js	Line:128	ID:31912c`);
-				});
-			}.call(null, 1)) || console.info(`🟠 pageTest/index.js	Line:126	ID:545fb8`, i);
+	var i = {
+		1: function (a) {
+			// 'use strict';
+			console.info(`🟠 pageTest/index.js	Line:126	ID:9edd1e`, this, a);
+			(function (a) {
+				console.info(`🟠 pageTest/index.js	Line:129	ID:701178`, this, a);
+			}).call(null, 2);
+		},
+	};
+	i[1].call(null, 1);
 })();
-
-/*
-gán i = 8087
-chay n(6486 = lodash), n(6407), n(5273), n(5812), n(6295)
-
-ko chạy t.exports = r
-
-*/
