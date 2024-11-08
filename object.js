@@ -1,5 +1,0 @@
-// ham triggerEvent tai dong 21639 cua slide.min.js can nhan vao 1 tham so la 1 object e
-e = {
-	node: '<div class="slide-object slide-object-vectorshape shown cursor-hover      " data-model-id="5hPASxDlUvO" data-acc-text="Rectangle 6" tabindex="-1" aria-hidden="true" data-display-name="SlideObject" data-dv_comp="25" style="z-index: 1; width: 38.75px; height: 49.6px; opacity: 1; transform-origin: 19.375px 24.8px; transform: translate(3px, 445px) rotate(0deg) scale(1, 1);"><div class="slideobject-maskable" data-display-name="VectorSlideObject" data-dv_comp="5" style="height: 49.6px; width: 38.75px; transform: translate(0px, 0px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-xmlns-xlink="http://www.w3.org/1999/xlink" version="1.1" baseprofile="full" height="49.6" width="38.75" focusable="false" viewBox="0 0 50 64" data-commandset-id="32" data-accepts="events" data-dv_ref="ref-117"><g class="eventable" data-accepts="events"><path d="M0,0L49.7465515136719,0 49.7465515136719,64 0,64z" id="uniqueDomId-118" fill="#4285F4" fill-opacity="0" data-accepts="events"></path></g></svg></div></div>',
-	
-}

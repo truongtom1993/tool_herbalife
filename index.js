@@ -1,5 +1,6 @@
+'use strict';
+
 !(function () {
-	return;
 	var __webpack_modules__ = {
 		1: function (t, e, n) {
 			/*
@@ -118,17 +119,4 @@
 		t.children || (t.children = []);
 		return t;
 	};
-})();
-
-(function a1() {
-	var i = {
-		1: function (a) {
-			// 'use strict';
-			console.info(`🟠 pageTest/index.js	Line:126	ID:9edd1e`, this, a);
-			(function (a) {
-				console.info(`🟠 pageTest/index.js	Line:129	ID:701178`, this, a);
-			}).call(null, 2);
-		},
-	};
-	i[1].call(null, 1);
 })();
