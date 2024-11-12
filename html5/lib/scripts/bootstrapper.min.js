@@ -8684,34 +8684,33 @@
 		},
 		errorManager_8939: function (cache, cache_exports, require) {
 			var i;
-			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:8674	ID:c993a5`)(
-				(i = function (t) {
-					'use strict';
-					var e = require('lodash_6486'),
-						i = require('debug_4839'),
-						r = e.curry(function (t, n, i, r) {
-							t([n, '::', i, ' - ', e.slice(arguments, 3).join(' ')].join(''));
-						}, 4);
-					return {
-						throwFatal: r(function (t) {
-							throw new Error(t);
-						}),
-						throwError: r(function (t) {
-							var e = i.debugMode ? 'error' : 'warn';
-							console[e](t), i.throwError();
-						}),
-						throwErrorSoft: r(function (t) {
-							i.debugMode && console.warn(t);
-						}),
-						warn: r(function (t) {
-							console.warn(t);
-						}),
-						backtick: function (t) {
-							return ['`', t, '`'].join('');
-						},
-					};
-				}.call(cache_exports, require, cache_exports, cache)),
-			),
+			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:8674	ID:c993a5`);
+			(i = function (t) {
+				'use strict';
+				var e = require('lodash_6486'),
+					i = require('debug_4839'),
+					r = e.curry(function (t, n, i, r) {
+						t([n, '::', i, ' - ', e.slice(arguments, 3).join(' ')].join(''));
+					}, 4);
+				return {
+					throwFatal: r(function (t) {
+						throw new Error(t);
+					}),
+					throwError: r(function (t) {
+						var e = i.debugMode ? 'error' : 'warn';
+						console[e](t), i.throwError();
+					}),
+					throwErrorSoft: r(function (t) {
+						i.debugMode && console.warn(t);
+					}),
+					warn: r(function (t) {
+						console.warn(t);
+					}),
+					backtick: function (t) {
+						return ['`', t, '`'].join('');
+					},
+				};
+			}.call(cache_exports, require, cache_exports, cache)),
 				void 0 === i || (cache.exports = i);
 		},
 		events_8880: function (cache, cache_exports, require) {
@@ -9252,61 +9251,60 @@
 		},
 		dfdfdf_5613: function (cache, cache_exports, require) {
 			var i;
-			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:9239	ID:524e0c`)(
-				(i = function (t) {
-					function e(t) {
-						if (t)
-							return (function (t) {
-								for (var n in e.prototype) t[n] = e.prototype[n];
-								return t;
-							})(t);
-					}
-					return (
-						(e.prototype.on = e.prototype.addEventListener =
+			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:9239	ID:524e0c`);
+			(i = function (t) {
+				function e(t) {
+					if (t)
+						return (function (t) {
+							for (var n in e.prototype) t[n] = e.prototype[n];
+							return t;
+						})(t);
+				}
+				return (
+					(e.prototype.on = e.prototype.addEventListener =
+						function (t, e) {
+							return (this._callbacks = this._callbacks || {}), (this._callbacks[t] = this._callbacks[t] || []).push(e), this;
+						}),
+					(e.prototype.once = function (t, e) {
+						var n = this;
+						function i() {
+							n.off(t, i), e.apply(this, arguments);
+						}
+						return (this._callbacks = this._callbacks || {}), (i.fn = e), this.on(t, i), this;
+					}),
+					(e.prototype.off =
+						e.prototype.removeListener =
+						e.prototype.removeAllListeners =
+						e.prototype.removeEventListener =
 							function (t, e) {
-								return (this._callbacks = this._callbacks || {}), (this._callbacks[t] = this._callbacks[t] || []).push(e), this;
+								if (((this._callbacks = this._callbacks || {}), 0 == arguments.length)) return (this._callbacks = {}), this;
+								var n,
+									i = this._callbacks[t];
+								if (!i) return this;
+								if (1 == arguments.length) return delete this._callbacks[t], this;
+								for (var r = 0; r < i.length; r++)
+									if ((n = i[r]) === e || n.fn === e) {
+										i.splice(r, 1);
+										break;
+									}
+								return this;
 							}),
-						(e.prototype.once = function (t, e) {
-							var n = this;
-							function i() {
-								n.off(t, i), e.apply(this, arguments);
-							}
-							return (this._callbacks = this._callbacks || {}), (i.fn = e), this.on(t, i), this;
-						}),
-						(e.prototype.off =
-							e.prototype.removeListener =
-							e.prototype.removeAllListeners =
-							e.prototype.removeEventListener =
-								function (t, e) {
-									if (((this._callbacks = this._callbacks || {}), 0 == arguments.length)) return (this._callbacks = {}), this;
-									var n,
-										i = this._callbacks[t];
-									if (!i) return this;
-									if (1 == arguments.length) return delete this._callbacks[t], this;
-									for (var r = 0; r < i.length; r++)
-										if ((n = i[r]) === e || n.fn === e) {
-											i.splice(r, 1);
-											break;
-										}
-									return this;
-								}),
-						(e.prototype.emit = function (t) {
-							this._callbacks = this._callbacks || {};
-							var e = [].slice.call(arguments, 1),
-								n = this._callbacks[t];
-							if (n) for (var i = 0, r = (n = n.slice(0)).length; i < r; ++i) n[i].apply(this, e);
-							return this;
-						}),
-						(e.prototype.listeners = function (t) {
-							return (this._callbacks = this._callbacks || {}), this._callbacks[t] || [];
-						}),
-						(e.prototype.hasListeners = function (t) {
-							return !!this.listeners(t).length;
-						}),
-						e
-					);
-				}.call(cache_exports, require, cache_exports, cache)),
-			),
+					(e.prototype.emit = function (t) {
+						this._callbacks = this._callbacks || {};
+						var e = [].slice.call(arguments, 1),
+							n = this._callbacks[t];
+						if (n) for (var i = 0, r = (n = n.slice(0)).length; i < r; ++i) n[i].apply(this, e);
+						return this;
+					}),
+					(e.prototype.listeners = function (t) {
+						return (this._callbacks = this._callbacks || {}), this._callbacks[t] || [];
+					}),
+					(e.prototype.hasListeners = function (t) {
+						return !!this.listeners(t).length;
+					}),
+					e
+				);
+			}.call(cache_exports, require, cache_exports, cache)),
 				void 0 === i || (cache.exports = i);
 		},
 		dfdfdf_8150: function (cache, cache_exports, require) {
@@ -10089,493 +10087,490 @@
 		},
 		lmsManager_8945: function (cache, cache_exports, require) {
 			var i;
-			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:10072	ID:6378fb`)(
-				(i = function (t) {
-					'use strict';
-					var e,
-						i = require('lodash_6486'),
-						r = require('detection_8579'),
-						o = require('events_8880'),
-						a = require('pubSub_9032'),
-						s = require('utils_82'),
-						l = require('dfdfdf_4170'),
-						u = require('dfdfdf_5053'),
-						c = require('dfdfdf_8150'),
-						h = require('dfdfdf_5964'),
-						d = require('vow_4811'),
-						f = {
-							initialize: function (t, n) {
-								(e = t), (this.resumer = n), (this.learningInterfaces = []);
-								var i = e.get('xapi');
-								null != i &&
-									(i.manualConfiguration ||
-										((i = Object.assign({}, i, {
-											endpoint: '',
-											param1: '',
-											param2: '',
-										})),
-										DS.presentation.set('xapi', i)),
-									DS.debugWindow.init(
-										Object.assign({}, i, {
-											lmsEnabled: window.globals.tinCanPresent,
-										}),
-									),
-									h.setConfig(this.getXApiStatementConfig())),
-									this.initLms(),
-									this.initLrs(),
-									this.addPartials(),
-									this.addListeners();
-							},
-							getXApiStatementConfig: function () {
-								return {
-									version: e.get('tincanVersion'),
-									lang: e.get('tincanLanguage'),
-									activityId: this.getActivityId(),
-								};
-							},
-							getActivityId: function () {
-								var t = s.queryStringToObj() || {};
-								return s.getPath(t, 'activity_id', s.getPath(t, 'slxapi.activityId', s.getPath(e, 'xapi.activityId', '')));
-							},
-							getItem: function (t) {
-								var e = i.first(this.learningInterfaces);
-								if (null == e) {
-									var n = d.Deferred();
-									return n.resolve(), n.promise();
-								}
-								return e.getItem(t);
-							},
-							setItem: function (t, e) {
-								i.first(this.learningInterfaces).setItem(t, e);
-							},
-							getScorings: function () {
-								var t = e.get('scoring'),
-									n = e.scorings() || [];
-								return 0 === n.length && null != t && n.push(t), n;
-							},
-							initLms: function () {
-								var t,
-									n = this.getScorings(),
-									i = e.get('courseId'),
-									o = window.globals,
-									a = o.lmsPresent,
-									s = o.tinCanPresent,
-									c = o.cmi5Present,
-									h = r.env.isRise;
-								s || h ? (t = l.initialize(i, e.get('tincanVersion'), n, e, h)) : a && (t = u.initialize(i, n, c)),
-									t && (t.setResumer(this.resumer), this.learningInterfaces.push(t));
-							},
-							initLrs: function () {
-								var t = e.get('xapi');
-								if (t && t.lrsEnabled) {
-									var n = new c(this.getActivityId(), this.getScorings(), this.resumer);
-									n.isValid() && this.learningInterfaces.push(n);
-								}
-							},
-							lmsPresent: function () {
-								return this.learningInterfaces && this.learningInterfaces.length > 0;
-							},
-							addListeners: function () {
-								var t = {};
-								(t[o.interaction.EVALUATED] = this.onInteractionEvaluated.bind(this)),
-									(t[o.quiz.COMPLETED] = this.quizComplete),
-									(t[o.course.COMPLETED] = this.courseComplete),
-									(t[o.course.MANUALLY_COMPLETED] = this.manualCourseComplete),
-									(t[o.course.VIEWED] = this.viewedComplete),
-									(t[o.status.UPDATED] = this.reportStatus),
-									(t[o.quiz.RETRIED] = this.quizRetried),
-									(t[o.course.SEND_XAPI_STATEMENT] = this.sendXApiStatement.bind(this)),
-									a.on(t);
-							},
-							onInteractionEvaluated: function (t, e) {
-								var n = this.getScorings();
-								(t.hasScoring() || (n.length > 0 && n.hasQuiz(t))) &&
-									this.learningInterfaces.forEach(function (n) {
-										return n.interactionAnswered(t, e);
-									});
-							},
-							sendXApiStatement: function (t) {
-								null != t.result && null != t.result.duration && (t.result.duration = h.formatTime(t.result.duration)),
-									this.callInterfaceMethod('sendXApiStatement', t);
-							},
-							callInterfaceMethod: function (t) {
-								for (var e = arguments.length, n = new Array(e > 1 ? e - 1 : 0), r = 1; r < e; r++) n[r - 1] = arguments[r];
-								this.learningInterfaces.forEach(function (e) {
-									i.isFunction(e[t]) && e[t].apply(e, n);
+			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:10072	ID:6378fb`);
+			(i = function (t) {
+				'use strict';
+				var e,
+					i = require('lodash_6486'),
+					r = require('detection_8579'),
+					o = require('events_8880'),
+					a = require('pubSub_9032'),
+					s = require('utils_82'),
+					l = require('dfdfdf_4170'),
+					u = require('dfdfdf_5053'),
+					c = require('dfdfdf_8150'),
+					h = require('dfdfdf_5964'),
+					d = require('vow_4811'),
+					f = {
+						initialize: function (t, n) {
+							(e = t), (this.resumer = n), (this.learningInterfaces = []);
+							var i = e.get('xapi');
+							null != i &&
+								(i.manualConfiguration ||
+									((i = Object.assign({}, i, {
+										endpoint: '',
+										param1: '',
+										param2: '',
+									})),
+									DS.presentation.set('xapi', i)),
+								DS.debugWindow.init(
+									Object.assign({}, i, {
+										lmsEnabled: window.globals.tinCanPresent,
+									}),
+								),
+								h.setConfig(this.getXApiStatementConfig())),
+								this.initLms(),
+								this.initLrs(),
+								this.addPartials(),
+								this.addListeners();
+						},
+						getXApiStatementConfig: function () {
+							return {
+								version: e.get('tincanVersion'),
+								lang: e.get('tincanLanguage'),
+								activityId: this.getActivityId(),
+							};
+						},
+						getActivityId: function () {
+							var t = s.queryStringToObj() || {};
+							return s.getPath(t, 'activity_id', s.getPath(t, 'slxapi.activityId', s.getPath(e, 'xapi.activityId', '')));
+						},
+						getItem: function (t) {
+							var e = i.first(this.learningInterfaces);
+							if (null == e) {
+								var n = d.Deferred();
+								return n.resolve(), n.promise();
+							}
+							return e.getItem(t);
+						},
+						setItem: function (t, e) {
+							i.first(this.learningInterfaces).setItem(t, e);
+						},
+						getScorings: function () {
+							var t = e.get('scoring'),
+								n = e.scorings() || [];
+							return 0 === n.length && null != t && n.push(t), n;
+						},
+						initLms: function () {
+							var t,
+								n = this.getScorings(),
+								i = e.get('courseId'),
+								o = window.globals,
+								a = o.lmsPresent,
+								s = o.tinCanPresent,
+								c = o.cmi5Present,
+								h = r.env.isRise;
+							s || h ? (t = l.initialize(i, e.get('tincanVersion'), n, e, h)) : a && (t = u.initialize(i, n, c)),
+								t && (t.setResumer(this.resumer), this.learningInterfaces.push(t));
+						},
+						initLrs: function () {
+							var t = e.get('xapi');
+							if (t && t.lrsEnabled) {
+								var n = new c(this.getActivityId(), this.getScorings(), this.resumer);
+								n.isValid() && this.learningInterfaces.push(n);
+							}
+						},
+						lmsPresent: function () {
+							return this.learningInterfaces && this.learningInterfaces.length > 0;
+						},
+						addListeners: function () {
+							var t = {};
+							(t[o.interaction.EVALUATED] = this.onInteractionEvaluated.bind(this)),
+								(t[o.quiz.COMPLETED] = this.quizComplete),
+								(t[o.course.COMPLETED] = this.courseComplete),
+								(t[o.course.MANUALLY_COMPLETED] = this.manualCourseComplete),
+								(t[o.course.VIEWED] = this.viewedComplete),
+								(t[o.status.UPDATED] = this.reportStatus),
+								(t[o.quiz.RETRIED] = this.quizRetried),
+								(t[o.course.SEND_XAPI_STATEMENT] = this.sendXApiStatement.bind(this)),
+								a.on(t);
+						},
+						onInteractionEvaluated: function (t, e) {
+							var n = this.getScorings();
+							(t.hasScoring() || (n.length > 0 && n.hasQuiz(t))) &&
+								this.learningInterfaces.forEach(function (n) {
+									return n.interactionAnswered(t, e);
 								});
-							},
-							addPartials: function () {
-								var t = this;
-								this.callInterfaceMethod = this.callInterfaceMethod.bind(this);
-								[
-									'courseStarted',
-									'slideViewed',
-									'slideLeft',
-									'setTotalSlides',
-									'quizComplete',
-									'courseComplete',
-									'manualCourseComplete',
-									'viewedComplete',
-									'reportStatus',
-									'quizRetried',
-								].forEach(function (e) {
-									t[e] = i.partial(t.callInterfaceMethod, e);
+						},
+						sendXApiStatement: function (t) {
+							null != t.result && null != t.result.duration && (t.result.duration = h.formatTime(t.result.duration)),
+								this.callInterfaceMethod('sendXApiStatement', t);
+						},
+						callInterfaceMethod: function (t) {
+							for (var e = arguments.length, n = new Array(e > 1 ? e - 1 : 0), r = 1; r < e; r++) n[r - 1] = arguments[r];
+							this.learningInterfaces.forEach(function (e) {
+								i.isFunction(e[t]) && e[t].apply(e, n);
+							});
+						},
+						addPartials: function () {
+							var t = this;
+							this.callInterfaceMethod = this.callInterfaceMethod.bind(this);
+							[
+								'courseStarted',
+								'slideViewed',
+								'slideLeft',
+								'setTotalSlides',
+								'quizComplete',
+								'courseComplete',
+								'manualCourseComplete',
+								'viewedComplete',
+								'reportStatus',
+								'quizRetried',
+							].forEach(function (e) {
+								t[e] = i.partial(t.callInterfaceMethod, e);
+							});
+						},
+						lmsUnload: function (t) {
+							return this.learningInterfaces.some(function (e) {
+								return !!i.isFunction(e.lmsUnload) && (e.lmsUnload(t), !0);
+							});
+						},
+						checkAllInterfacesCloseReady: function () {
+							return this.learningInterfaces.every(function (t) {
+								return null == t.isCloseReady || t.isCloseReady();
+							});
+						},
+						whenCloseReady: function () {
+							var t = this;
+							return new Promise(function (e) {
+								window.requestAnimationFrame(function n() {
+									t.checkAllInterfacesCloseReady() ? e() : window.requestAnimationFrame(n);
 								});
-							},
-							lmsUnload: function (t) {
-								return this.learningInterfaces.some(function (e) {
-									return !!i.isFunction(e.lmsUnload) && (e.lmsUnload(t), !0);
-								});
-							},
-							checkAllInterfacesCloseReady: function () {
-								return this.learningInterfaces.every(function (t) {
-									return null == t.isCloseReady || t.isCloseReady();
-								});
-							},
-							whenCloseReady: function () {
-								var t = this;
-								return new Promise(function (e) {
-									window.requestAnimationFrame(function n() {
-										t.checkAllInterfacesCloseReady() ? e() : window.requestAnimationFrame(n);
-									});
-								});
-							},
-						};
-					return f;
-				}.call(cache_exports, require, cache_exports, cache)),
-			),
+							});
+						},
+					};
+				return f;
+			}.call(cache_exports, require, cache_exports, cache)),
 				void 0 === i || (cache.exports = i);
 		},
 		superagent_4403: function (cache, cache_exports, require) {
 			var i;
-			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:10230	ID:d6380b`)(
-				(i = function (t) {
-					var e = require('dfdfdf_5613'),
-						i = 'undefined' == typeof window ? this || self : window;
-					function r() {}
-					function o(t) {
-						switch ({}.toString.call(t)) {
-							case '[object File]':
-							case '[object Blob]':
-							case '[object FormData]':
-								return !0;
-							default:
-								return !1;
-						}
+			console.info(`🟠 html5/lib/scripts/bootstrapper.min.js	Line:10230	ID:d6380b`);
+			(i = function (t) {
+				var e = require('dfdfdf_5613'),
+					i = 'undefined' == typeof window ? this || self : window;
+				function r() {}
+				function o(t) {
+					switch ({}.toString.call(t)) {
+						case '[object File]':
+						case '[object Blob]':
+						case '[object FormData]':
+							return !0;
+						default:
+							return !1;
 					}
-					superagent.getXHR = function () {
-						if (!(!i.XMLHttpRequest || (i.location && 'file:' == i.location.protocol && i.ActiveXObject))) return new XMLHttpRequest();
-						try {
-							return new ActiveXObject('Microsoft.XMLHTTP');
-						} catch (t) {}
-						try {
-							return new ActiveXObject('Msxml2.XMLHTTP.6.0');
-						} catch (t) {}
-						try {
-							return new ActiveXObject('Msxml2.XMLHTTP.3.0');
-						} catch (t) {}
-						try {
-							return new ActiveXObject('Msxml2.XMLHTTP');
-						} catch (t) {}
-						return !1;
-					};
-					var a = ''.trim
-						? function (t) {
-								return t.trim();
-						  }
-						: function (t) {
-								return t.replace(/(^\s*|\s*$)/g, '');
-						  };
-					function s(t) {
-						return t === Object(t);
-					}
-					function l(t) {
-						if (!s(t)) return t;
-						var e = [];
-						for (var n in t) null != t[n] && e.push(encodeURIComponent(n) + '=' + encodeURIComponent(t[n]));
-						return e.join('&');
-					}
-					function u(t) {
-						for (var e, n = {}, i = t.split('&'), r = 0, o = i.length; r < o; ++r)
-							(e = i[r].split('=')), (n[decodeURIComponent(e[0])] = decodeURIComponent(e[1]));
-						return n;
-					}
-					function bienC(t, e) {
-						(e = e || {}),
-							(this.req = t),
-							(this.xhr = this.req.xhr),
-							(this.text =
-								('HEAD' != this.req.method && ('' === this.xhr.responseType || 'text' === this.xhr.responseType)) || void 0 === this.xhr.responseType
-									? this.xhr.responseText
-									: null),
-							(this.statusText = this.req.xhr.statusText),
-							this.setStatusProperties(this.xhr.status),
-							(this.header = this.headers =
-								(function (t) {
-									var e,
-										n,
-										i,
-										r,
-										o = t.split(/\r?\n/),
-										s = {};
-									o.pop();
-									for (var l = 0, u = o.length; l < u; ++l)
-										(e = (n = o[l]).indexOf(':')), (i = n.slice(0, e).toLowerCase()), (r = a(n.slice(e + 1))), (s[i] = r);
-									return s;
-								})(this.xhr.getAllResponseHeaders())),
-							(this.header['content-type'] = this.xhr.getResponseHeader('content-type')),
-							this.setHeaderProperties(this.header),
-							(this.body = 'HEAD' != this.req.method ? this.parseBody(this.text ? this.text : this.xhr.response) : null);
-					}
-					function bienH(t, n) {
-						var i = this;
-						e.call(this),
-							(this._query = this._query || []),
-							(this.method = t),
-							(this.url = n),
-							(this.header = {}),
-							(this._header = {}),
-							this.on('end', function () {
-								var t = null,
-									e = null;
-								try {
-									e = new bienC(i);
-								} catch (e) {
-									return ((t = new Error('Parser is unable to parse the response')).parse = !0), (t.original = e), i.callback(t);
-								}
-								if ((i.emit('response', e), t)) return i.callback(t, e);
-								if ((e.status >= 200 && e.status < 300) || 0 === e.status) return i.callback(t, e);
-								var n = new Error(e.statusText || 'Unsuccessful HTTP response');
-								(n.original = t), (n.response = e), (n.status = e.status), i.callback(t || n, e);
-							});
-					}
-					function superagent(t, linkTaiBaiMoi) {
-						// t === 'GET'
-						return 'function' == typeof linkTaiBaiMoi
-							? new bienH('GET', t).end(linkTaiBaiMoi)
-							: 1 == arguments.length
-							? new bienH('GET', t)
-							: new bienH(t, linkTaiBaiMoi);
-					}
-					return (
-						(superagent.serializeObject = l),
-						(superagent.parseString = u),
-						(superagent.types = {
-							html: 'text/html',
-							json: 'application/json',
-							xml: 'application/xml',
-							urlencoded: 'application/x-www-form-urlencoded',
-							form: 'application/x-www-form-urlencoded',
-							'form-data': 'application/x-www-form-urlencoded',
-						}),
-						(superagent.serialize = {
-							'application/x-www-form-urlencoded': l,
-							'application/json': JSON.stringify,
-						}),
-						(superagent.parse = {
-							'application/x-www-form-urlencoded': u,
-							'application/json': JSON.parse,
-						}),
-						(bienC.prototype.get = function (t) {
-							return this.header[t.toLowerCase()];
-						}),
-						(bienC.prototype.setHeaderProperties = function (t) {
-							var e = this.header['content-type'] || '';
-							this.type = e.split(/ *; */).shift();
-							var n = (function (t) {
-								return (function (t, e, n) {
-									for (var i = 0, r = t.length, o = 3 == arguments.length ? n : t[i++]; i < r; ) o = e.call(null, o, t[i], ++i, t);
-									return o;
-								})(
-									t.split(/ *; */),
-									function (t, e) {
-										var n = e.split(/ *= */),
-											i = n.shift(),
-											r = n.shift();
-										return i && r && (t[i] = r), t;
-									},
-									{},
-								);
-							})(e);
-							for (var i in n) this[i] = n[i];
-						}),
-						(bienC.prototype.parseBody = function (t) {
-							var e = superagent.parse[this.type];
-							return e && t && (t.length || t instanceof Object) ? e(t) : null;
-						}),
-						(bienC.prototype.setStatusProperties = function (t) {
-							1223 === t && (t = 204);
-							var e = (t / 100) | 0;
-							(this.status = t),
-								(this.statusType = e),
-								(this.info = 1 == e),
-								(this.ok = 2 == e),
-								(this.clientError = 4 == e),
-								(this.serverError = 5 == e),
-								(this.error = (4 == e || 5 == e) && this.toError()),
-								(this.accepted = 202 == t),
-								(this.noContent = 204 == t),
-								(this.badRequest = 400 == t),
-								(this.unauthorized = 401 == t),
-								(this.notAcceptable = 406 == t),
-								(this.notFound = 404 == t),
-								(this.forbidden = 403 == t);
-						}),
-						(bienC.prototype.toError = function () {
-							var t = this.req,
-								e = t.method,
-								n = t.url,
-								i = 'cannot ' + e + ' ' + n + ' (' + this.status + ')',
-								r = new Error(i);
-							return (r.status = this.status), (r.method = e), (r.url = n), r;
-						}),
-						(superagent.Response = bienC),
-						e(bienH.prototype),
-						(bienH.prototype.use = function (t) {
-							return t(this), this;
-						}),
-						(bienH.prototype.timeout = function (t) {
-							return (this._timeout = t), this;
-						}),
-						(bienH.prototype.clearTimeout = function () {
-							return (this._timeout = 0), clearTimeout(this._timer), this;
-						}),
-						(bienH.prototype.abort = function () {
-							if (!this.aborted) return (this.aborted = !0), this.xhr.abort(), this.clearTimeout(), this.emit('abort'), this;
-						}),
-						(bienH.prototype.set = function (t, e) {
-							if (s(t)) {
-								for (var n in t) this.set(n, t[n]);
-								return this;
-							}
-							return (this._header[t.toLowerCase()] = e), (this.header[t] = e), this;
-						}),
-						(bienH.prototype.unset = function (t) {
-							return delete this._header[t.toLowerCase()], delete this.header[t], this;
-						}),
-						(bienH.prototype.getHeader = function (t) {
-							return this._header[t.toLowerCase()];
-						}),
-						(bienH.prototype.type = function (t) {
-							return this.set('Content-Type', superagent.types[t] || t), this;
-						}),
-						(bienH.prototype.accept = function (t) {
-							return this.set('Accept', superagent.types[t] || t), this;
-						}),
-						(bienH.prototype.auth = function (t, e) {
-							var n = btoa(t + ':' + e);
-							return this.set('Authorization', 'Basic ' + n), this;
-						}),
-						(bienH.prototype.query = function (t) {
-							return 'string' != typeof t && (t = l(t)), t && this._query.push(t), this;
-						}),
-						(bienH.prototype.field = function (t, e) {
-							return this._formData || (this._formData = new i.FormData()), this._formData.append(t, e), this;
-						}),
-						(bienH.prototype.attach = function (t, e, n) {
-							return this._formData || (this._formData = new i.FormData()), this._formData.append(t, e, n), this;
-						}),
-						(bienH.prototype.send = function (t) {
-							var e = s(t),
-								n = this.getHeader('Content-Type');
-							if (e && s(this._data)) for (var i in t) this._data[i] = t[i];
-							else
-								'string' == typeof t
-									? (n || this.type('form'),
-									  (n = this.getHeader('Content-Type')),
-									  (this._data = 'application/x-www-form-urlencoded' == n ? (this._data ? this._data + '&' + t : t) : (this._data || '') + t))
-									: (this._data = t);
-							return !e || o(t) || n || this.type('json'), this;
-						}),
-						(bienH.prototype.callback = function (t, e) {
-							var n = this._callback;
-							this.clearTimeout(), n(t, e);
-						}),
-						(bienH.prototype.crossDomainError = function () {
-							var t = new Error('Origin is not allowed by Access-Control-Allow-Origin');
-							(t.crossDomain = !0), this.callback(t);
-						}),
-						(bienH.prototype.timeoutError = function () {
-							var t = this._timeout,
-								e = new Error('timeout of ' + t + 'ms exceeded');
-							(e.timeout = t), this.callback(e);
-						}),
-						(bienH.prototype.withCredentials = function () {
-							return (this._withCredentials = !0), this;
-						}),
-						(bienH.prototype.end = function (t) {
-							var e = this,
-								n = (this.xhr = superagent.getXHR()),
-								i = this._query.join('&'),
-								a = this._timeout,
-								s = this._formData || this._data;
-							(this._callback = t || r),
-								(n.onreadystatechange = function () {
-									if (4 == n.readyState) {
-										try {
-											n.status;
-										} catch (t) {
-											if (e.timedout) return e.timeoutError();
-											if (e.aborted) return;
-											return e.crossDomainError();
-										}
-										e.emit('end');
-									}
-								});
-							var l = function (t) {
-								t.total > 0 && (t.percent = (t.loaded / t.total) * 100), e.emit('progress', t);
-							};
-							this.hasListeners('progress') && (n.onprogress = l);
+				}
+				superagent.getXHR = function () {
+					if (!(!i.XMLHttpRequest || (i.location && 'file:' == i.location.protocol && i.ActiveXObject))) return new XMLHttpRequest();
+					try {
+						return new ActiveXObject('Microsoft.XMLHTTP');
+					} catch (t) {}
+					try {
+						return new ActiveXObject('Msxml2.XMLHTTP.6.0');
+					} catch (t) {}
+					try {
+						return new ActiveXObject('Msxml2.XMLHTTP.3.0');
+					} catch (t) {}
+					try {
+						return new ActiveXObject('Msxml2.XMLHTTP');
+					} catch (t) {}
+					return !1;
+				};
+				var a = ''.trim
+					? function (t) {
+							return t.trim();
+					  }
+					: function (t) {
+							return t.replace(/(^\s*|\s*$)/g, '');
+					  };
+				function s(t) {
+					return t === Object(t);
+				}
+				function l(t) {
+					if (!s(t)) return t;
+					var e = [];
+					for (var n in t) null != t[n] && e.push(encodeURIComponent(n) + '=' + encodeURIComponent(t[n]));
+					return e.join('&');
+				}
+				function u(t) {
+					for (var e, n = {}, i = t.split('&'), r = 0, o = i.length; r < o; ++r)
+						(e = i[r].split('=')), (n[decodeURIComponent(e[0])] = decodeURIComponent(e[1]));
+					return n;
+				}
+				function bienC(t, e) {
+					(e = e || {}),
+						(this.req = t),
+						(this.xhr = this.req.xhr),
+						(this.text =
+							('HEAD' != this.req.method && ('' === this.xhr.responseType || 'text' === this.xhr.responseType)) || void 0 === this.xhr.responseType
+								? this.xhr.responseText
+								: null),
+						(this.statusText = this.req.xhr.statusText),
+						this.setStatusProperties(this.xhr.status),
+						(this.header = this.headers =
+							(function (t) {
+								var e,
+									n,
+									i,
+									r,
+									o = t.split(/\r?\n/),
+									s = {};
+								o.pop();
+								for (var l = 0, u = o.length; l < u; ++l) (e = (n = o[l]).indexOf(':')), (i = n.slice(0, e).toLowerCase()), (r = a(n.slice(e + 1))), (s[i] = r);
+								return s;
+							})(this.xhr.getAllResponseHeaders())),
+						(this.header['content-type'] = this.xhr.getResponseHeader('content-type')),
+						this.setHeaderProperties(this.header),
+						(this.body = 'HEAD' != this.req.method ? this.parseBody(this.text ? this.text : this.xhr.response) : null);
+				}
+				function bienH(t, n) {
+					var i = this;
+					e.call(this),
+						(this._query = this._query || []),
+						(this.method = t),
+						(this.url = n),
+						(this.header = {}),
+						(this._header = {}),
+						this.on('end', function () {
+							var t = null,
+								e = null;
 							try {
-								n.upload && this.hasListeners('progress') && (n.upload.onprogress = l);
-							} catch (t) {}
-							if (
-								(a &&
-									!this._timer &&
-									(this._timer = setTimeout(function () {
-										(e.timedout = !0), e.abort();
-									}, a)),
-								i && ((i = superagent.serializeObject(i)), (this.url += ~this.url.indexOf('?') ? '&' + i : '?' + i)),
-								n.open(this.method, this.url, !0),
-								this._withCredentials && (n.withCredentials = !0),
-								'GET' != this.method && 'HEAD' != this.method && 'string' != typeof s && !o(s))
-							) {
-								var u = superagent.serialize[this.getHeader('Content-Type')];
-								u && (s = u(s));
+								e = new bienC(i);
+							} catch (e) {
+								return ((t = new Error('Parser is unable to parse the response')).parse = !0), (t.original = e), i.callback(t);
 							}
-							for (var c in this.header) null != this.header[c] && n.setRequestHeader(c, this.header[c]);
+							if ((i.emit('response', e), t)) return i.callback(t, e);
+							if ((e.status >= 200 && e.status < 300) || 0 === e.status) return i.callback(t, e);
+							var n = new Error(e.statusText || 'Unsuccessful HTTP response');
+							(n.original = t), (n.response = e), (n.status = e.status), i.callback(t || n, e);
+						});
+				}
+				function superagent(t, linkTaiBaiMoi) {
+					// t === 'GET'
+					return 'function' == typeof linkTaiBaiMoi
+						? new bienH('GET', t).end(linkTaiBaiMoi)
+						: 1 == arguments.length
+						? new bienH('GET', t)
+						: new bienH(t, linkTaiBaiMoi);
+				}
+				return (
+					(superagent.serializeObject = l),
+					(superagent.parseString = u),
+					(superagent.types = {
+						html: 'text/html',
+						json: 'application/json',
+						xml: 'application/xml',
+						urlencoded: 'application/x-www-form-urlencoded',
+						form: 'application/x-www-form-urlencoded',
+						'form-data': 'application/x-www-form-urlencoded',
+					}),
+					(superagent.serialize = {
+						'application/x-www-form-urlencoded': l,
+						'application/json': JSON.stringify,
+					}),
+					(superagent.parse = {
+						'application/x-www-form-urlencoded': u,
+						'application/json': JSON.parse,
+					}),
+					(bienC.prototype.get = function (t) {
+						return this.header[t.toLowerCase()];
+					}),
+					(bienC.prototype.setHeaderProperties = function (t) {
+						var e = this.header['content-type'] || '';
+						this.type = e.split(/ *; */).shift();
+						var n = (function (t) {
+							return (function (t, e, n) {
+								for (var i = 0, r = t.length, o = 3 == arguments.length ? n : t[i++]; i < r; ) o = e.call(null, o, t[i], ++i, t);
+								return o;
+							})(
+								t.split(/ *; */),
+								function (t, e) {
+									var n = e.split(/ *= */),
+										i = n.shift(),
+										r = n.shift();
+									return i && r && (t[i] = r), t;
+								},
+								{},
+							);
+						})(e);
+						for (var i in n) this[i] = n[i];
+					}),
+					(bienC.prototype.parseBody = function (t) {
+						var e = superagent.parse[this.type];
+						return e && t && (t.length || t instanceof Object) ? e(t) : null;
+					}),
+					(bienC.prototype.setStatusProperties = function (t) {
+						1223 === t && (t = 204);
+						var e = (t / 100) | 0;
+						(this.status = t),
+							(this.statusType = e),
+							(this.info = 1 == e),
+							(this.ok = 2 == e),
+							(this.clientError = 4 == e),
+							(this.serverError = 5 == e),
+							(this.error = (4 == e || 5 == e) && this.toError()),
+							(this.accepted = 202 == t),
+							(this.noContent = 204 == t),
+							(this.badRequest = 400 == t),
+							(this.unauthorized = 401 == t),
+							(this.notAcceptable = 406 == t),
+							(this.notFound = 404 == t),
+							(this.forbidden = 403 == t);
+					}),
+					(bienC.prototype.toError = function () {
+						var t = this.req,
+							e = t.method,
+							n = t.url,
+							i = 'cannot ' + e + ' ' + n + ' (' + this.status + ')',
+							r = new Error(i);
+						return (r.status = this.status), (r.method = e), (r.url = n), r;
+					}),
+					(superagent.Response = bienC),
+					e(bienH.prototype),
+					(bienH.prototype.use = function (t) {
+						return t(this), this;
+					}),
+					(bienH.prototype.timeout = function (t) {
+						return (this._timeout = t), this;
+					}),
+					(bienH.prototype.clearTimeout = function () {
+						return (this._timeout = 0), clearTimeout(this._timer), this;
+					}),
+					(bienH.prototype.abort = function () {
+						if (!this.aborted) return (this.aborted = !0), this.xhr.abort(), this.clearTimeout(), this.emit('abort'), this;
+					}),
+					(bienH.prototype.set = function (t, e) {
+						if (s(t)) {
+							for (var n in t) this.set(n, t[n]);
+							return this;
+						}
+						return (this._header[t.toLowerCase()] = e), (this.header[t] = e), this;
+					}),
+					(bienH.prototype.unset = function (t) {
+						return delete this._header[t.toLowerCase()], delete this.header[t], this;
+					}),
+					(bienH.prototype.getHeader = function (t) {
+						return this._header[t.toLowerCase()];
+					}),
+					(bienH.prototype.type = function (t) {
+						return this.set('Content-Type', superagent.types[t] || t), this;
+					}),
+					(bienH.prototype.accept = function (t) {
+						return this.set('Accept', superagent.types[t] || t), this;
+					}),
+					(bienH.prototype.auth = function (t, e) {
+						var n = btoa(t + ':' + e);
+						return this.set('Authorization', 'Basic ' + n), this;
+					}),
+					(bienH.prototype.query = function (t) {
+						return 'string' != typeof t && (t = l(t)), t && this._query.push(t), this;
+					}),
+					(bienH.prototype.field = function (t, e) {
+						return this._formData || (this._formData = new i.FormData()), this._formData.append(t, e), this;
+					}),
+					(bienH.prototype.attach = function (t, e, n) {
+						return this._formData || (this._formData = new i.FormData()), this._formData.append(t, e, n), this;
+					}),
+					(bienH.prototype.send = function (t) {
+						var e = s(t),
+							n = this.getHeader('Content-Type');
+						if (e && s(this._data)) for (var i in t) this._data[i] = t[i];
+						else
+							'string' == typeof t
+								? (n || this.type('form'),
+								  (n = this.getHeader('Content-Type')),
+								  (this._data = 'application/x-www-form-urlencoded' == n ? (this._data ? this._data + '&' + t : t) : (this._data || '') + t))
+								: (this._data = t);
+						return !e || o(t) || n || this.type('json'), this;
+					}),
+					(bienH.prototype.callback = function (t, e) {
+						var n = this._callback;
+						this.clearTimeout(), n(t, e);
+					}),
+					(bienH.prototype.crossDomainError = function () {
+						var t = new Error('Origin is not allowed by Access-Control-Allow-Origin');
+						(t.crossDomain = !0), this.callback(t);
+					}),
+					(bienH.prototype.timeoutError = function () {
+						var t = this._timeout,
+							e = new Error('timeout of ' + t + 'ms exceeded');
+						(e.timeout = t), this.callback(e);
+					}),
+					(bienH.prototype.withCredentials = function () {
+						return (this._withCredentials = !0), this;
+					}),
+					(bienH.prototype.end = function (t) {
+						var e = this,
+							n = (this.xhr = superagent.getXHR()),
+							i = this._query.join('&'),
+							a = this._timeout,
+							s = this._formData || this._data;
+						(this._callback = t || r),
+							(n.onreadystatechange = function () {
+								if (4 == n.readyState) {
+									try {
+										n.status;
+									} catch (t) {
+										if (e.timedout) return e.timeoutError();
+										if (e.aborted) return;
+										return e.crossDomainError();
+									}
+									e.emit('end');
+								}
+							});
+						var l = function (t) {
+							t.total > 0 && (t.percent = (t.loaded / t.total) * 100), e.emit('progress', t);
+						};
+						this.hasListeners('progress') && (n.onprogress = l);
+						try {
+							n.upload && this.hasListeners('progress') && (n.upload.onprogress = l);
+						} catch (t) {}
+						if (
+							(a &&
+								!this._timer &&
+								(this._timer = setTimeout(function () {
+									(e.timedout = !0), e.abort();
+								}, a)),
+							i && ((i = superagent.serializeObject(i)), (this.url += ~this.url.indexOf('?') ? '&' + i : '?' + i)),
+							n.open(this.method, this.url, !0),
+							this._withCredentials && (n.withCredentials = !0),
+							'GET' != this.method && 'HEAD' != this.method && 'string' != typeof s && !o(s))
+						) {
+							var u = superagent.serialize[this.getHeader('Content-Type')];
+							u && (s = u(s));
+						}
+						for (var c in this.header) null != this.header[c] && n.setRequestHeader(c, this.header[c]);
 
-							return this.emit('request', this), n.send(s), this;
-						}),
-						(superagent.Request = bienH),
-						(superagent.get = function (t, e, n) {
-							var i = superagent('GET', t);
-							return 'function' == typeof e && ((n = e), (e = null)), e && i.query(e), n && i.end(n), i;
-						}),
-						(superagent.head = function (t, e, n) {
-							var i = superagent('HEAD', t);
-							return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
-						}),
-						(superagent.del = function (t, e) {
-							var n = superagent('DELETE', t);
-							return e && n.end(e), n;
-						}),
-						(superagent.patch = function (t, e, n) {
-							var i = superagent('PATCH', t);
-							return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
-						}),
-						(superagent.post = function (t, e, n) {
-							var i = superagent('POST', t);
-							return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
-						}),
-						(superagent.put = function (t, e, n) {
-							var i = superagent('PUT', t);
-							return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
-						}),
-						superagent
-					);
-				}.call(cache_exports, require, cache_exports, cache)),
-			),
+						return this.emit('request', this), n.send(s), this;
+					}),
+					(superagent.Request = bienH),
+					(superagent.get = function (t, e, n) {
+						var i = superagent('GET', t);
+						return 'function' == typeof e && ((n = e), (e = null)), e && i.query(e), n && i.end(n), i;
+					}),
+					(superagent.head = function (t, e, n) {
+						var i = superagent('HEAD', t);
+						return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
+					}),
+					(superagent.del = function (t, e) {
+						var n = superagent('DELETE', t);
+						return e && n.end(e), n;
+					}),
+					(superagent.patch = function (t, e, n) {
+						var i = superagent('PATCH', t);
+						return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
+					}),
+					(superagent.post = function (t, e, n) {
+						var i = superagent('POST', t);
+						return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
+					}),
+					(superagent.put = function (t, e, n) {
+						var i = superagent('PUT', t);
+						return 'function' == typeof e && ((n = e), (e = null)), e && i.send(e), n && i.end(n), i;
+					}),
+					superagent
+				);
+			}.call(cache_exports, require, cache_exports, cache)),
 				void 0 === i || (cache.exports = i);
 		},
 		dfdfdf_4170: function (cache, cache_exports, require) {
