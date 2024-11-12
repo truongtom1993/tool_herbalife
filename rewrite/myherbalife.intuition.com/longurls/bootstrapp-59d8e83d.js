@@ -6570,7 +6570,7 @@
 							slideLocation: a + '/slides.min.js',
 							frameLocations: {
 								MOBILE: a + '/frame.mobile.min.js',
-								DESKTOP: a + '/frame?.desktop.min.js',
+								DESKTOP: a + '/frame.desktop.min.js',
 							},
 							cssLocations: {
 								MOBILE: s + '/mobile.min.css',
@@ -41949,7 +41949,6 @@
 					return t;
 				};
 				s.trigger = function (t) {
-					console.info('trigger 41722', t);
 					// t= change:value rất nhiều lần
 					if (!this._events) return this;
 					for (var e = Math.max(0, arguments.length - 1), n = Array(e), i = 0; i < e; i++) n[i] = arguments[i + 1];
