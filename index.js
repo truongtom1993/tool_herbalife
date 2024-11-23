@@ -25,25 +25,28 @@ function printAllKey(obj, parentKey = '') {
 	if (!obj || count > 1000) return;
 	if (typeof obj === 'object') {
 		for (const key in obj) {
-			// if ( key !== "AnimationTimeline") continue
 			if (key === 'constructor') continue;
 			count++;
 			try {
-				console.info(parentKey ? parentKey + ' ' + key : key);
+				const currentKey = parentKey ? parentKey + '_' + key : key;
+				console.info(currentKey);
 
 				if (!obj || !obj?.[key]) continue;
 				if (typeof obj[key] === 'function' && typeof obj[key].prototype === 'object' && Object.keys(obj[key].prototype).length > 0) {
 					printAllKey(obj[key].prototype, key);
 				}
 				if (typeof obj[key] === 'object' && key !== '__proto__' && Object.keys(obj[key]).length > 0) {
-					if (key === 'data:updated' || key === '_listeningTo' || typeof +key === 'number' || key === 'constructor') continue;
-					printAllKey(obj[key], parentKey + '_' + key);
+					if (key === 'data:updated' || key === '_listeningTo' || key === 'player:accessibleTextChanged' || !Number.isNaN(parseInt(key))) {
+						console.info(`🟠 index.js	Line:41	ID:7f0a22`, key);
+						continue;
+					}
+					printAllKey(obj[key], currentKey);
 				}
 			} catch {
 				continue;
 			}
 		}
-	} else if (typeof obj === 'function' && typeof obj.prototype === 'object' && Object.keys(obj.prototype).length > 0) {
+	} else if (typeof obj === 'function') {
 		printAllKey(obj.prototype, parentKey);
 	}
 }
