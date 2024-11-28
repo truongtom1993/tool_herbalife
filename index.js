@@ -21,7 +21,13 @@ function findKey(obj, keyName, parentName = '') {
 		}
 	}
 }
-
+function printType(obj) {
+		if (typeof obj === "object") {
+			if ( Array.isArray(obj)) return 'array'
+			return 'object'
+		}
+		return typeof obj
+}
 function printAllKey(obj, parentKey = '', isPrototype) {
 	if (!obj) return;
 	Object.keys(obj).length > 0 && console.info(`🟠 index.js	Line:26	ID:779455`, Object.keys(obj).join(' , '));
@@ -29,7 +35,7 @@ function printAllKey(obj, parentKey = '', isPrototype) {
 	one: for (const key in obj) {
 		if (count > maxError) break one;
 		count++;
-		const currentKey = parentKey ? parentKey + separator + key + `-${typeof obj[key]}` : key;
+		const currentKey = parentKey ? parentKey + separator + key + `-${printType(obj[key])}` : key;
 		console.log(currentKey);
 		try {
 			const keyValue = obj?.[key];
